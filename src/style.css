@@ -1,0 +1,10 @@
+.navMenu {
+  display: flex;
+  gap: 30px;
+}
+
+.navList {
+  display: flex;
+  gap: 30px;
+  font-size: 24px;
+}
