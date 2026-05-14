@@ -1,16 +1,9 @@
-/*サイト全体のフォントやカラー、リストの黒点のリセットなどそういうことするファイルだよ*/
-
 body {
   font-family: "Noto Sans JP", sans-serif;
-  color: #f8f8f5;
-  background-color: #1c1c1c;
+  color: var(--colorWhite);
+  background-color: var(--main-bg-color);
 }
 
 a {
-  text-decoration: none;
-  color: #f8f8f5;
-}
-
-li {
-  list-style: none;
+  color: var(--colorWhite);
 }

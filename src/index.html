@@ -2,17 +2,27 @@
 <html lang="ja">
   <head>
     <title>d-base-vanilla</title>
+    <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/variables.css" />
+    <link rel="stylesheet" href="styles/utils.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <div class="container">
-      <nav class="navMenu">
-        <h1>
+      <!--================================================================-->
+      <!--====================== nav menu=== =============================-->
+      <!--================================================================-->
+      <nav class="nav-menu flex">
+        <h1 class="logo">
           <a href="#">D-base</a>
         </h1>
-        <ul class="navList">
+        <ul class="nav-list">
           <li>
             <a href="#">ホーム</a>
           </li>
@@ -33,7 +43,66 @@
           </li>
         </ul>
       </nav>
-      <img src="" />
+      <!--================================================================-->
+      <!--====================== nav menu end=============================-->
+      <!--================================================================-->
+
+      <!--================================================================-->
+      <!--===================== top section===============================-->
+      <!--================================================================-->
+
+      <!--      <div class="flex">-->
+      <!--        <div class="top-view-text" style="font-size: 50px">-->
+      <!--          鳥取唯一の技術<br />高級感ある仕上がりを<br />あなたの愛車に-->
+      <!--        </div>-->
+      <!--        <img-->
+      <!--          src="../images/top/topView03.jpg"-->
+      <!--          alt="コーティングされた車の画像"-->
+      <!--          class="top-view-image"-->
+      <!--        />-->
+      <!--      </div>-->
+
+      <!--================================================================-->
+      <!--===================== top section end===========================-->
+      <!--================================================================-->
+
+      <!--================================================================-->
+      <!--====================== price section ===========================-->
+      <!--================================================================-->
+
+      <div class="price-section-container">
+        <div class="section-name">
+          <span class="price-title">価格表</span>
+          <span style="font-size: 20px">Price</span>
+        </div>
+
+        <div class="price-card">
+          <div class="price-plan-container">
+            <p style="font-size: 30px; font-weight: bold">新車〜登録３ヶ月</p>
+            <p style="font-size: 22px; letter-spacing: 1px">
+              低価格でコーティングの効果を重視するあなたにおすすめ。ボディ全面を塗装の負担なく研磨します。
+            </p>
+            <p class="bold" style="font-size: 30px">¥ 104,500~</p>
+          </div>
+
+          <div class="price-plan-container">
+            <p style="font-size: 30px; font-weight: bold">経年車</p>
+            <p style="font-size: 22px">
+              最高の艶が出るまで無制限に研磨します。ボディ全面はもちろんピラーやドア内まで徹底的に磨きます。
+            </p>
+
+            <p style="font-size: 30px; font-weight: bold">¥ 127,000~</p>
+          </div>
+
+          <div>
+            <a href="#" class="button bold">詳しい価格表を見る</a>
+          </div>
+        </div>
+      </div>
+
+      <!--================================================================-->
+      <!--====================== price section end========================-->
+      <!--================================================================-->
     </div>
   </body>
 </html>
