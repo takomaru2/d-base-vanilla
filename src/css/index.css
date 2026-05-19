@@ -8,7 +8,6 @@
 }
 
 .nav-menu {
-  background-color: var(--colorBlack);
   display: flex;
   position: fixed;
   top: 0;
@@ -288,6 +287,7 @@
 .access-section-wrapper {
   background-color: var(--colorBlack);
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .access-section {
@@ -368,6 +368,23 @@
 
 .question-img {
   transform: rotate(45deg);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-list {
+  display: flex;
+  gap: 60px;
+  font-size: 24px;
+  justify-content: center;
+}
+
+.logo-wrapper {
+  text-align: center;
+  padding-top: 30px;
 }
 
 /* aaaaa */
