@@ -1,15 +1,21 @@
+/*bodyから外したけど結局こっちにつけているぞ。。。*/
+.container {
+  background-color: var(--colorBlack);
+}
+
 .logo {
   font-size: 40px;
 }
 
 .nav-menu {
+  background-color: var(--colorBlack);
   display: flex;
   position: fixed;
   top: 0;
   z-index: 10;
   padding-inline: 70px;
   justify-content: space-between;
-
+  height: 60px;
   width: 100%;
 }
 
@@ -22,13 +28,13 @@
 
 .top-view-section-container {
   background-color: var(--colorBlack);
+  margin: 90px auto 0;
 }
 
 .top-view-contents-container {
   max-width: 1400px;
   height: 1000px;
   position: relative;
-  /*margin: 90px auto 0;*/
 }
 
 .top-view-text-container {
@@ -52,6 +58,91 @@
 .top-view-image {
   max-width: 1000px;
   height: 782px;
+}
+
+.vertical-section-container {
+  background-color: var(--colorBlack);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  column-gap: 200px;
+  margin: 30px 0 160px;
+}
+
+.vertical-title {
+  font-weight: bold;
+  font-size: 40px;
+  color: #d0a900;
+  writing-mode: vertical-rl;
+  max-height: 700px;
+  letter-spacing: 14px;
+}
+
+.vertical-text-spacing {
+  display: block;
+  text-align: end;
+}
+
+.vertical-text {
+  line-height: 60px;
+  font-size: 30px;
+  writing-mode: vertical-rl;
+  letter-spacing: 8px;
+}
+
+.works-section-container {
+  background-color: var(--colorWhite);
+  /*height: 2000px; !*  一旦2000pxに設定*!*/
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
+}
+
+.works-content-wrapper {
+  width: 1400px;
+}
+
+.work-img-container {
+  max-width: 1400px;
+  /*height: 700px;*/
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+  align-items: end;
+  margin-bottom: 100px;
+
+  /*padding: 50px;*/
+}
+
+.AAA {
+  font-size: 50px;
+  font-weight: bold;
+  display: block;
+  color: var(--colorBlack);
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.BBB {
+  font-size: 50px;
+  font-weight: bold;
+  display: block;
+  color: var(--colorBlack);
+}
+
+.before-after-section {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 100px;
+  align-items: center;
+}
+
+.car-name {
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--colorBlack);
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
 }
 
 .price-plan {
@@ -165,6 +256,10 @@
 .coating-product-container {
   display: flex;
   justify-content: center;
+}
+
+.section-content {
+  width: 1400px;
 }
 
 .products-img {
