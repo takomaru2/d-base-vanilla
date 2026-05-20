@@ -322,6 +322,56 @@
   gap: 80px;
 }
 
+.review-section {
+  background-color: var(--colorWhite);
+  color: var(--colorBlack);
+  display: flex;
+  flex-direction: column;
+}
+
+.section-content-wrapper {
+  width: 1400px;
+  align-self: center;
+}
+
+.review-img-container {
+  display: flex;
+  align-items: end;
+  gap: 30px;
+  padding-block: 90px 120px;
+}
+
+.work-car-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 150px;
+}
+
+.review-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+  align-self: center;
+}
+
+.reviewer-name {
+  font-size: 22px;
+}
+
+.coating-type {
+  font-size: 22px;
+}
+
+.review-title {
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.review-comment {
+  font-size: 22px;
+}
+
 .access-section-wrapper {
   background-color: var(--colorBlack);
   padding-top: 100px;
