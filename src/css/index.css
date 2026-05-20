@@ -25,6 +25,44 @@
   align-items: center;
 }
 
+.fixed-bottom-contact-container {
+  width: 100vw;
+  height: 90px;
+  background-color: var(--flexBottomContactBgColor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding-inline: 140px;
+}
+.tel-number {
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+.shop-info-list {
+  font-size: 20px;
+  display: flex;
+  gap: 30px;
+}
+
+.line-link-button-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.line-form-container {
+  font-size: 18px;
+}
+
+.line-green {
+  color: var(--lineColor);
+}
+
 .top-view-section-container {
   background-color: var(--colorBlack);
   margin: 90px auto 0;
