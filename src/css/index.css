@@ -65,7 +65,8 @@
 
 .top-view-section-container {
   background-color: var(--colorBlack);
-  margin: 90px auto 0;
+  /*margin: 90px auto 0;*/
+  padding: 90px;
 }
 
 .top-view-contents-container {
@@ -146,12 +147,16 @@
   justify-content: center;
   column-gap: 50px;
   align-items: end;
-  margin-bottom: 100px;
+  margin-bottom: 240px;
 
   /*padding: 50px;*/
 }
 
-.AAA {
+.work-img-container {
+  display: flex;
+}
+
+.works-car-name {
   font-size: 50px;
   font-weight: bold;
   display: block;
@@ -162,7 +167,6 @@
 
 .BBB {
   font-size: 50px;
-  font-weight: bold;
   display: block;
   color: var(--colorBlack);
 }
@@ -341,7 +345,7 @@
   padding-block: 90px 120px;
 }
 
-.work-car-card {
+.review-car-card {
   display: flex;
   flex-direction: column;
   row-gap: 150px;
