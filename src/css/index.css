@@ -189,7 +189,7 @@
 .price-plan {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 
   .period {
     font-size: 30px;
@@ -220,13 +220,15 @@
 }
 
 .price-section-container {
-  background-image: url("../../images/top/priceSectionBackImage.jpg");
-  background-color: #1c1c1c;
-  background-size: cover;
+  /*background-image: url("../../images/top/priceSectionBackImage.jpg");*/
+  /*background-color: #1c1c1c;*/
+  /*background-size: cover;*/
   width: 100vw;
   height: 100vh;
   padding-top: 200px;
   padding-left: 100px;
+  background: no-repeat 50% / cover
+    url("../../images/top/priceSectionBackImage.jpg");
 }
 
 .section-title {
@@ -479,37 +481,70 @@
   padding-top: 30px;
 }
 
-/* aaaaa */
+@media screen and (max-width: 600px) {
+  /*todo: 一時的*/
+  .footer,
+  .vertical-section-container,
+  .works-section-container,
+  .review-section,
+  .question-section-wrapper,
+  .access-section-wrapper {
+    display: none !important;
+  }
+  /*todo: 一時的*/
 
-/*.access-section-2 {*/
-/*  background-color: var(--main-bg-color);*/
-/*  padding-block: 100px;*/
-/*  display: flex;*/
-/*  justify-content: center;*/
-/*}*/
+  .price-section-container {
+    padding-block: 50px;
+    padding-left: 0;
+  }
 
-/*.content-outer-wrapper {*/
-/*  width: 1400px;*/
-/*}*/
+  .price-card {
+    width: 300px;
+    padding: 35px;
+    margin-inline: auto;
+    margin-block: 30px;
+  }
 
-/*.content-inner-wrapper {*/
-/*  display: flex;*/
-/*  flex-direction: column;*/
-/*  row-gap: 120px;*/
-/*  font-size: 22px;*/
-/*}*/
+  .price-plan {
+    gap: 12px;
+    text-align: center;
 
-/*.access-item-row {*/
-/*  display: flex;*/
-/*  justify-content: space-between;*/
-/*  align-items: center;*/
-/*}*/
+    .period {
+      font-size: 14px;
+    }
 
-/*.access-description {*/
-/*  width: 545px;*/
-/*}*/
+    .description {
+      font-size: 12px;
+    }
 
-/*.access-shop-info {*/
-/*  text-align: center;*/
-/*  line-height: 2;*/
-/*}*/
+    .price {
+      font-size: 30px;
+    }
+  }
+
+  .link-button-wrapper {
+    align-self: center;
+  }
+
+  .link-button {
+    font-size: 14px;
+    padding: 10px 25px;
+  }
+
+  .section-title {
+    text-align: center;
+    margin-bottom: 0;
+
+    .ja {
+      font-size: 28px;
+
+      &::before {
+        top: 43px;
+      }
+    }
+
+    .en {
+      font-size: 14px;
+    }
+  }
+}
