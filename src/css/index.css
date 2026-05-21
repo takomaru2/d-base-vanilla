@@ -128,9 +128,46 @@
   letter-spacing: 8px;
 }
 
+.works-section-container-sp {
+  background-color: var(--colorWhite);
+  padding: 50px 16px;
+}
+
+.before-after-card-sp-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 80px;
+}
+
+.before-after-card-sp {
+  background-color: var(--main-bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.before-after-card-text-wrapper {
+  justify-content: center;
+  padding-inline: 12px;
+  flex: 1;
+  color: var(--colorWhite);
+  text-align: center;
+}
+
+.before-after-card-text {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.before-after-card-meta {
+  font-size: 12px;
+  font-weight: lighter;
+  margin-top: 20px;
+}
+
 .works-section-container {
   background-color: var(--colorWhite);
-  /*height: 2000px; !*  一旦2000pxに設定*!*/
   display: flex;
   justify-content: center;
   padding-top: 150px;
@@ -169,6 +206,11 @@
   font-size: 50px;
   display: block;
   color: var(--colorBlack);
+}
+
+.before-after-card-sp {
+  color: var(--colorBlack);
+  font-size: 16px;
 }
 
 .before-after-section {
@@ -434,6 +476,10 @@
 .more-button {
   text-align: center;
   padding-block: 80px;
+
+  @media screen and (max-width: 600px) {
+    padding-block: 0 50px;
+  }
 }
 
 .question-section-wrapper {
