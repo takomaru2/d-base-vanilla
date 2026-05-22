@@ -184,6 +184,28 @@
   letter-spacing: 8px;
 }
 
+@media screen and (max-width: 600px) {
+  .vertical-section-container {
+    background-color: var(--colorBlack);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    column-gap: 70px;
+    margin-block: 30px 100px;
+    /* margin-block要検討 */
+  }
+
+  .vertical-title {
+    font-size: 22px;
+    max-height: 370px;
+  }
+
+  .vertical-text {
+    line-height: 30px;
+    font-size: 14px;
+  }
+}
+
 .works-section-container {
   background-color: var(--colorWhite);
   display: flex;
@@ -616,7 +638,7 @@
 @media screen and (max-width: 600px) {
   /*todo: 一時的*/
   .footer,
-  .vertical-section-container,
+  .top-view-section-container,
   .works-section-container,
   .review-section,
   .access-section-wrapper {
