@@ -63,6 +63,62 @@
   color: var(--lineColor);
 }
 
+.fixed-bottom-contact-container-sp {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .fixed-bottom-contact-container {
+    display: none;
+  }
+
+  .fixed-bottom-contact-container-sp {
+    display: block;
+    background-color: var(--flexBottomContactBgColor);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 90px;
+    z-index: 100;
+  }
+
+  .fixed-bottom-contact-sp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+  }
+
+  .line-link-button-container-sp {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  .tel-number-sp {
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+  .line-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .shop-info-list-sp {
+    font-size: 14px;
+    display: flex;
+  }
+
+  .line-form-container {
+    font-size: 14px;
+  }
+}
+
 .top-view-section-container {
   background-color: var(--colorBlack);
   /*margin: 90px auto 0;*/
@@ -128,44 +184,6 @@
   letter-spacing: 8px;
 }
 
-.works-section-container-sp {
-  background-color: var(--colorWhite);
-  padding: 50px 16px;
-}
-
-.before-after-card-sp-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin-bottom: 80px;
-}
-
-.before-after-card-sp {
-  background-color: var(--main-bg-color);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.before-after-card-text-wrapper {
-  justify-content: center;
-  padding-inline: 12px;
-  flex: 1;
-  color: var(--colorWhite);
-  text-align: center;
-}
-
-.before-after-card-text {
-  text-align: center;
-  margin: 0 auto;
-}
-
-.before-after-card-meta {
-  font-size: 12px;
-  font-weight: lighter;
-  margin-top: 20px;
-}
-
 .works-section-container {
   background-color: var(--colorWhite);
   display: flex;
@@ -226,6 +244,52 @@
   color: var(--colorBlack);
   writing-mode: vertical-rl;
   transform: rotate(180deg);
+}
+
+/*SP版はPCの時はdisplay noneしておくのあってんのかいな*/
+.works-section-container-sp {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .works-section-container-sp {
+    background-color: var(--colorWhite);
+    padding: 50px 16px;
+    display: block;
+  }
+
+  .before-after-card-sp-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 80px;
+  }
+
+  .before-after-card-sp {
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .before-after-card-text-wrapper {
+    justify-content: center;
+    padding-inline: 12px;
+    flex: 1;
+    color: var(--colorWhite);
+    text-align: center;
+  }
+
+  .before-after-card-text {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .before-after-card-meta {
+    font-size: 12px;
+    font-weight: lighter;
+    margin-top: 20px;
+  }
 }
 
 .price-plan {
