@@ -127,6 +127,7 @@
   .shop-info-list-sp {
     font-size: 14px;
     display: flex;
+    column-gap: 15px;
   }
 
   .line-form-container {
@@ -141,7 +142,7 @@
 
 .top-view-contents-container {
   max-width: 1400px;
-  height: 1000px;
+  height: 100vh;
   position: relative;
 }
 
@@ -565,8 +566,7 @@
 
 .access-section-wrapper {
   background-color: var(--colorBlack);
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-block: 100px;
 }
 
 .access-section {
@@ -596,6 +596,51 @@
   font-size: 22px;
   text-align: center;
   line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+@media screen and (max-width: 600px) {
+  .access-section {
+    width: 100%;
+  }
+  .map-wrapper {
+    flex-direction: column-reverse;
+    row-gap: 20px;
+
+    .map-text {
+      width: 300px;
+      font-size: 12px;
+    }
+
+    .map {
+      width: 340px;
+      height: 200px;
+    }
+  }
+
+  .company {
+    flex-direction: column-reverse;
+    margin-top: 35px;
+    position: relative;
+    white-space: nowrap;
+
+    .company-text {
+      font-size: 14px;
+      position: absolute;
+      row-gap: 12px;
+
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .company-img {
+      width: 340px;
+      height: 200px;
+    }
+  }
 }
 
 .more-button {
@@ -680,8 +725,7 @@
   .works-section-container,
   .review-section,
   .nav-menu,
-  .coating-product-section-container,
-  .access-section-wrapper {
+  .coating-product-section-container {
     display: none !important;
   }
   /*todo: 一時的*/
