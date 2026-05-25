@@ -245,7 +245,6 @@
     font-size: 14px;
   }
 }
-
 .works-section-container {
   background-color: var(--colorWhite);
   display: flex;
@@ -254,23 +253,24 @@
 }
 
 .works-content-wrapper {
-  width: 1400px;
+  max-width: 1150px;
+}
+
+.before-after-section-sp {
+  display: none;
+
+  @media screen and (max-width: 600px) {
+    display: block;
+  }
 }
 
 .work-img-container {
   max-width: 1400px;
-  /*height: 700px;*/
   display: flex;
   justify-content: center;
   column-gap: 50px;
   align-items: end;
   margin-bottom: 240px;
-
-  /*padding: 50px;*/
-}
-
-.work-img-container {
-  display: flex;
 }
 
 .works-car-name {
@@ -308,23 +308,42 @@
   transform: rotate(180deg);
 }
 
-/*SP版はPCの時はdisplay noneしておくのあってんのかいな*/
-.works-section-container-sp {
-  display: none;
-}
-
 @media screen and (max-width: 600px) {
-  .works-section-container-sp {
-    background-color: var(--colorWhite);
-    padding: 50px 16px;
-    display: block;
+  .before-after-section {
+    display: none;
+  }
+
+  .work-img-container {
+    max-width: 375px;
+    column-gap: 10px;
+    margin-bottom: 80px;
+  }
+
+  .works-img {
+    /*width: 78px;*/
+    max-width: 100%;
+    height: 122px;
+  }
+
+  .works-img-hero {
+    /*max-width: 166px;*/
+    max-width: 100%;
+    height: 259px;
+  }
+
+  .BBB {
+    font-size: 14px;
+  }
+
+  .works-car-name {
+    font-size: 20px;
   }
 
   .before-after-card-sp-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin-bottom: 80px;
+    margin: 0 10px 80px;
   }
 
   .before-after-card-sp {
@@ -471,6 +490,7 @@
 .link-button {
   font-weight: bold;
   background-color: var(--buttonColor);
+  border-radius: 2px;
   color: var(--colorWhite);
   font-size: 30px;
   padding: 30px 90px;
@@ -646,6 +666,7 @@
 .more-button {
   text-align: center;
   padding-block: 80px;
+  border-radius: 2px;
 
   @media screen and (max-width: 600px) {
     padding-block: 0 50px;
@@ -721,11 +742,10 @@
 
 @media screen and (max-width: 600px) {
   /*todo: 一時的*/
-  .footer,
-  .works-section-container,
-  .review-section,
   .nav-menu,
-  .coating-product-section-container {
+  .footer,
+  .coating-product-section-container,
+  .review-section {
     display: none !important;
   }
   /*todo: 一時的*/
