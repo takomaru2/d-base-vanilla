@@ -622,6 +622,10 @@
 }
 
 @media screen and (max-width: 600px) {
+  .access-section-wrapper {
+    padding-block: 60px 0;
+  }
+
   .access-section {
     width: 100%;
   }
@@ -741,9 +745,29 @@
 }
 
 @media screen and (max-width: 600px) {
+  .footer-list {
+    font-size: 14px;
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .footer-link {
+    padding: 8px 20px;
+    display: inline-block;
+  }
+
+  .footer {
+    padding-block: 30px 120px;
+  }
+}
+
+@media screen and (max-width: 600px) {
   /*todo: 一時的*/
   .nav-menu,
-  .footer,
   .coating-product-section-container,
   .review-section {
     display: none !important;
