@@ -5,6 +5,7 @@
 
 .logo {
   font-size: 40px;
+  text-shadow: 2px 2px 4px #1c1c1c;
 }
 
 .nav-menu {
@@ -25,20 +26,49 @@
   align-items: center;
 }
 
-/*@media screen and (max-width: 600px) {*/
-/*  .nav-menu {*/
-/*    !*background-color: var(--colorBlack);*!*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*  }*/
+.header-menu {
+  display: none;
+}
 
-/*  .nav-list {*/
-/*    !*background-color: var(--colorBlack);*!*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    font-size: 20px;*/
-/*  }*/
-/*}*/
+.nav-list {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .header-menu {
+    display: block;
+    filter: drop-shadow(1px 1px 4px #434343);
+  }
+
+  .nav-menu {
+    padding-inline: 25px;
+    padding-top: 20px;
+  }
+
+  .header-menu-sp {
+    background-color: var(--colorWhite);
+    font-size: 20px;
+    padding: 5px 15px;
+    border-radius: 1px;
+    letter-spacing: 2px;
+  }
+
+  .nav-list-sp {
+    background-color: var(--colorBlack);
+    color: var(--colorWhite);
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    text-align: center;
+    padding-top: 30px;
+
+    display: none;
+  }
+}
 
 .fixed-bottom-contact-container {
   width: 100vw;
@@ -648,7 +678,6 @@
 
   .section-title {
     padding-top: 50px;
-    margin: 0;
   }
 
   .fuga {
@@ -888,12 +917,6 @@
 }
 
 @media screen and (max-width: 600px) {
-  /*todo: 一時的*/
-  .nav-menu {
-    display: none !important;
-  }
-  /*todo: 一時的*/
-
   .price-section-container {
     padding-block: 50px;
     padding-left: 0;
