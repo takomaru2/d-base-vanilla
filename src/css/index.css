@@ -511,10 +511,6 @@
   width: 1400px;
 }
 
-.products-img {
-  width: 400px;
-}
-
 .products-container {
   .name {
     color: var(--colorBlack);
@@ -533,6 +529,54 @@
   flex-wrap: wrap;
   gap: 80px;
 }
+
+/*sp*/
+@media screen and (max-width: 600px) {
+  .more-button {
+    /*margin-top: 40px;*/
+  }
+  .coating-product-section-container {
+    padding-top: 0;
+  }
+
+  .products-card-container {
+    flex-wrap: nowrap;
+    overflow: scroll;
+    padding-inline: 35px;
+    column-gap: 25px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .section-content {
+    min-width: 375px;
+  }
+
+  .products-card {
+    flex-shrink: 0;
+    width: 300px;
+    scroll-snap-align: center;
+    padding-top: 75px;
+    margin-bottom: 40px;
+  }
+
+  .products-img {
+    width: 100%;
+    height: 234px;
+  }
+
+  .products-container {
+    text-align: center;
+    .name {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+    .description {
+      margin-top: 4px;
+      font-size: 14px;
+    }
+  }
+}
+/*sp*/
 
 .review-section {
   background-color: var(--colorWhite);
@@ -845,8 +889,7 @@
 
 @media screen and (max-width: 600px) {
   /*todo: 一時的*/
-  .nav-menu,
-  .coating-product-section-container {
+  .nav-menu {
     display: none !important;
   }
   /*todo: 一時的*/
