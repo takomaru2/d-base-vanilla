@@ -497,7 +497,7 @@
   padding-top: var(--section-padding-top);
   padding-left: 100px;
   background: no-repeat 50% / cover
-    url("../../images/top/priceSectionBackImage.jpg");
+    url("../../../images/top/priceSectionBackImage.jpg");
 }
 
 .price-plan {
