@@ -15,6 +15,13 @@
   --mainFontEN: "Revalia", sans-serif;
   --subFontEN: "Russo One", sans-serif;
 
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 24px;
+  --font-size-xl: 30px;
+  --font-size-xxl: 40px;
+  --font-size-xxxl: 50px;
+
   --vwMin: 390px;
   --vwMax: 1680px;
 }
