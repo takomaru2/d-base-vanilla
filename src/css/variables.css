@@ -22,6 +22,8 @@
   --font-size-xxl: 40px;
   --font-size-xxxl: 50px;
 
+  --section-padding-top: 150px;
+  --section-padding-top-sp: 50px;
   --vwMin: 390px;
   --vwMax: 1680px;
 }
