@@ -112,6 +112,31 @@
     filter: drop-shadow(1px 1px 4px #434343);
   }
 
+  .logo-close-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .close-button {
+    position: relative;
+    text-align: center;
+  }
+
+  .close-icon {
+    font-size: 30px;
+    background-color: var(--colorWhite);
+    color: var(--colorBlack);
+    border-radius: 2px;
+
+    display: inline-block;
+    width: 49px;
+    height: 47px;
+    position: absolute;
+    top: -90px;
+    right: 30px;
+  }
+
   .nav-list {
     display: none;
   }
@@ -129,12 +154,12 @@
     letter-spacing: 2px;
   }
 
-  .nav-list-sp {
+  .nav-list-sp.open {
     background-color: var(--colorBlack);
     color: var(--colorWhite);
     width: 100vw;
     height: 100vh;
-    z-index: 100;
+    z-index: 200;
     font-size: var(--font-size-lg);
     display: flex;
     flex-direction: column;
@@ -142,8 +167,13 @@
     text-align: center;
     padding-top: 30px;
 
-    display: none;
+    object-fit: cover;
+    position: fixed;
+    bottom: 0;
+    left: 0;
   }
+
+  /*  =================*/
 }
 
 .fixed-bottom-contact-container {

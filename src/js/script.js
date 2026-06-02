@@ -41,4 +41,20 @@ questions.forEach((question, index) => {
 //   answer2.classList.toggle("open");
 // });
 
-// ==========>>>>>===============================
+// ======================ハンバーガー======>>>>>=====>>>>>>>>>>>>>>>>>>>>==========================>
+
+// header-menu-spをnav-list-sp
+
+const navMenuSp = document.querySelector(".header-menu-sp");
+const navListSp = document.querySelector(".nav-list-sp");
+const closeButton = document.querySelector(".close-button");
+
+navMenuSp.addEventListener("click", () => {
+  navListSp.classList.add("open");
+  console.log("おされた！！！");
+});
+
+closeButton.addEventListener("click", () => {
+  navListSp.classList.remove("open");
+  console.log("消された！！！");
+});
