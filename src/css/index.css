@@ -908,6 +908,12 @@
   margin: 0 auto;
 }
 
+.question-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 .question-list {
   display: flex;
   flex-direction: column;
@@ -944,8 +950,51 @@
   letter-spacing: 0.05em;
 }
 
+/*======＋アイコン=========*/
 .question-img {
   transform: rotate(45deg);
+}
+
+.question-img.none {
+  transform: rotate(45deg);
+  display: none;
+}
+/*=========*/
+
+/*============-アイコン====*/
+.minus-icon-img {
+  display: none;
+}
+
+.minus-icon-img.go {
+  display: block;
+}
+
+/*=====================*/
+.question-wrapper {
+}
+
+.answer-wrapper {
+  display: none;
+}
+
+/*この２つのクラス名どちらもを持っている要素*/
+.answer-wrapper.open {
+  display: block;
+}
+
+/*消すけす*/
+
+.question-wrapper-2 {
+}
+
+.answer-wrapper-2 {
+  display: none;
+}
+
+/*この２つのクラス名どちらもを持っている要素*/
+.answer-wrapper-2.open {
+  display: block;
 }
 
 @media screen and (max-width: 600px) {
