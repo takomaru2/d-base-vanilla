@@ -22,16 +22,25 @@ navMenuSp.addEventListener("click", () => {
   navListSp.classList.add("open");
 });
 
+// Logoを押した時
+const logo = document.querySelector(".nav-list-sp > .logo");
+logo.addEventListener("click", () => {
+  navListSp.classList.remove("open");
+  console.log("ロゴ！！！");
+});
+
 // xボタン押した時
-const closeButton = document.querySelector(".close-button");
+const closeButton = document.querySelector(".nav-list-sp > .close-button");
 closeButton.addEventListener("click", () => {
   navListSp.classList.remove("open");
+  console.log("ボタン機");
 });
 
 // メニューの何かしらを押した時
-const navMenus = document.querySelectorAll(".nav-list-sp>li");
+const navMenus = document.querySelectorAll(".nav-list-sp li");
 navMenus.forEach((navMenu) => {
   navMenu.addEventListener("click", () => {
     navListSp.classList.remove("open");
+    console.log("メニューたち");
   });
 });
