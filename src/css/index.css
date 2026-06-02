@@ -890,11 +890,6 @@
   @media screen and (max-width: 600px) {
     padding-block: 0 50px;
   }
-
-  .question-img {
-    width: 15px;
-    height: 15px;
-  }
 }
 
 /**/
@@ -983,20 +978,6 @@
   display: block;
 }
 
-/*消すけす*/
-
-.question-wrapper-2 {
-}
-
-.answer-wrapper-2 {
-  display: none;
-}
-
-/*この２つのクラス名どちらもを持っている要素*/
-.answer-wrapper-2.open {
-  display: block;
-}
-
 @media screen and (max-width: 600px) {
   .question-section-wrapper {
     padding-top: var(--section-padding-top-sp);
@@ -1018,6 +999,10 @@
   }
 
   .question-img {
+    width: 15px;
+    height: 15px;
+  }
+  .minus-icon-img {
     width: 15px;
     height: 15px;
   }
