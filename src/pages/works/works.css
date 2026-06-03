@@ -22,6 +22,8 @@
   padding-top: 200px;
 
   @media screen and (max-width: 375px) {
+    row-gap: 60px;
+    padding-top: 50px;
     padding-inline: 20px;
   }
 }
@@ -35,6 +37,7 @@
   width: 100%;
 
   @media screen and (max-width: 375px) {
+    row-gap: 60px;
     flex-direction: column;
   }
 }
@@ -102,6 +105,12 @@
   background-color: var(--colorBlack);
 }
 
+.work-process-img {
+  @media screen and (max-width: 375px) {
+    width: 100%;
+    height: auto;
+  }
+}
 .process {
   display: flex;
   flex-direction: column;
@@ -110,12 +119,24 @@
 
   max-width: 1400px;
   margin-inline: auto;
+
+  @media screen and (max-width: 375px) {
+    padding-top: 50px;
+    gap: 50px;
+  }
 }
 
+/*施工プロセスの説明*/
 .work-process {
   display: flex;
   gap: 150px;
   align-items: center;
+
+  @media screen and (max-width: 375px) {
+    flex-direction: column;
+    gap: 30px;
+    padding-inline: 20px;
+  }
 }
 
 .work-process-content {
@@ -127,14 +148,25 @@
 .work-process-title {
   font-size: var(--font-size-xl);
   font-weight: 700;
+
+  @media screen and (max-width: 375px) {
+    font-size: var(--font-size-md);
+    align-self: center;
+  }
 }
 
 .work-process-description {
-  width: 530px;
   font-size: var(--font-size-lg);
+  letter-spacing: 2px;
+  width: 100%;
+
+  @media screen and (max-width: 375px) {
+    font-size: var(--font-size-md);
+  }
 }
 
 .company-wrapper {
-  width: 1400px;
+  width: 100%;
+  max-width: 1400px;
   margin-inline: auto;
 }
