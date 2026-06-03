@@ -2,13 +2,28 @@
   padding-top: var(--section-padding-top);
 }
 
-.works-intro {
+/*================*/
+/*親で幅決める、子供は固定値つけない*/
+.works-intro-wrapper {
+  /*画面幅が1000でも2000でも画面幅いっぱいに背景はつく*/
   background-color: var(--colorBlack);
-  min-width: 1400px;
+  width: 100%;
+}
+
+.works-intro {
+  width: 100%;
+  max-width: 1400px;
+  margin-inline: auto;
+
   display: flex;
   flex-direction: column;
+
   row-gap: 130px;
   padding-top: 200px;
+
+  @media screen and (max-width: 375px) {
+    padding-inline: 20px;
+  }
 }
 
 .works-card {
@@ -17,6 +32,18 @@
   align-items: center;
   column-gap: 100px;
   row-gap: 130px;
+  width: 100%;
+
+  @media screen and (max-width: 375px) {
+    flex-direction: column;
+  }
+}
+
+.car-gallery {
+  @media screen and (max-width: 375px) {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .work-details {
@@ -28,9 +55,16 @@
 .work-detail-title {
   font-family: var(--subFontEN);
   font-size: var(--font-size-xxxl);
+
   display: flex;
+  justify-content: left;
   gap: 20px;
   letter-spacing: 2px;
+
+  @media screen and (max-width: 375px) {
+    font-size: var(--font-size-xl);
+    justify-content: center;
+  }
 }
 
 .work-detail-item {
@@ -59,10 +93,11 @@
 
 .work-report {
   font-size: var(--font-size-md);
-  width: 1400px;
+  width: 100%;
   margin-inline: auto;
 }
 
+/*============================*/
 .process-bg-color {
   background-color: var(--colorBlack);
 }
@@ -73,7 +108,7 @@
   padding-top: 150px;
   gap: 150px;
 
-  width: 1400px;
+  max-width: 1400px;
   margin-inline: auto;
 }
 
