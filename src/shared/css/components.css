@@ -1,0 +1,146 @@
+/* サイト固有で、複数ページで再利用する共通スタイルをまとめたファイル */
+/*　こうなると粒度が合わなくてこいつら置くところ考えなければ*/
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  color: var(--colorWhite);
+}
+
+a {
+  color: var(--colorWhite);
+}
+
+.section-title {
+  margin-bottom: 100px;
+
+  .ja {
+    font-weight: bold;
+    position: relative;
+    font-size: var(--font-size-xxl);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    padding-bottom: 4px;
+    display: inline-block;
+
+    &::before {
+      position: absolute;
+      top: 59px;
+      left: -4px;
+      width: 5px;
+      height: 5px;
+      content: "";
+      border-radius: 50%;
+      z-index: 100;
+    }
+  }
+
+  .en {
+    font-size: var(--font-size-lg);
+    font-family: var(--mainFontEN);
+    display: block;
+  }
+
+  &.black .ja {
+    color: var(--colorBlack);
+    border-color: var(--colorBlack);
+  }
+  &.black .ja::before {
+    background-color: var(--colorBlack);
+  }
+  &.black .en {
+    color: var(--colorBlack);
+  }
+
+  &.white .ja {
+    color: var(--colorWhite);
+    border-color: var(--colorWhite);
+  }
+  &.white .ja::before {
+    background-color: var(--colorWhite);
+  }
+  &.white .en {
+    color: var(--colorWhite);
+  }
+
+  @media screen and (max-width: 375px) {
+    margin-bottom: 35px;
+    text-align: center;
+
+    .ja {
+      font-size: var(--font-size-xl);
+
+      &::before {
+        top: 45px;
+      }
+    }
+
+    .en {
+      font-size: var(--font-size-sm);
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding-block: 150px;
+
+  .footer-list {
+    display: flex;
+    gap: 60px;
+    font-size: var(--font-size-lg);
+    justify-content: center;
+  }
+
+  .logo-wrapper {
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  @media screen and (max-width: 375px) {
+    .footer-list {
+      font-size: var(--font-size-sm);
+      gap: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .footer-link {
+      padding: 8px 20px;
+      display: inline-block;
+    }
+
+    .footer {
+      padding-block: 30px 120px;
+    }
+  }
+}
+
+.link-button {
+  font-size: var(--font-size-xl);
+  padding: 30px 90px;
+  font-weight: bold;
+  background-color: var(--buttonColor);
+  border-radius: 2px;
+  color: var(--colorWhite);
+  display: inline-block;
+
+  @media screen and (max-width: 375px) {
+    font-size: var(--font-size-sm);
+    padding: 10px 25px;
+  }
+}
+
+.logo {
+  font-size: var(--font-size-xxl);
+  font-family: var(--mainFontEN);
+  text-shadow: 2px 2px 4px #1c1c1c;
+
+  @media screen and (max-width: 375px) {
+    font-size: var(--font-size-lg);
+    text-align: center;
+    letter-spacing: 2px;
+  }
+}
