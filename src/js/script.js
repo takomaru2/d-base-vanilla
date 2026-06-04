@@ -15,32 +15,36 @@ questions.forEach((question, index) => {
 
 // ====================> ハンバーガーメニュー <====================
 
-// メニューボタン押した時
 const navMenuSp = document.querySelector(".header-menu-sp");
 const navListSp = document.querySelector(".nav-list-sp");
+const logo = document.querySelector(".nav-list-sp > .logo");
+const closeButton = document.querySelector(".nav-list-sp > .close-button");
+const navMenus = document.querySelectorAll(".nav-list-sp li");
+
+if (!navMenuSp || !navListSp || !logo || !closeButton) {
+  throw new Error("要素が存在しません！！");
+}
+
+// メニューボタン押した時
 navMenuSp.addEventListener("click", () => {
   navListSp.classList.add("open");
 });
 
 // Logoを押した時
-const logo = document.querySelector(".nav-list-sp > .logo");
+
 logo.addEventListener("click", () => {
   navListSp.classList.remove("open");
-  console.log("ロゴ！！！");
 });
 
 // xボタン押した時
-const closeButton = document.querySelector(".nav-list-sp > .close-button");
+
 closeButton.addEventListener("click", () => {
   navListSp.classList.remove("open");
-  console.log("ボタン機");
 });
 
 // メニューの何かしらを押した時
-const navMenus = document.querySelectorAll(".nav-list-sp li");
 navMenus.forEach((navMenu) => {
   navMenu.addEventListener("click", () => {
     navListSp.classList.remove("open");
-    console.log("メニューたち");
   });
 });
