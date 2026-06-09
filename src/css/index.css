@@ -289,7 +289,7 @@
 .top-view-text {
   font-weight: bold;
   font-size: var(--font-size-xxl);
-  letter-spacing: 4.4px;
+  letter-spacing: 4px;
 }
 
 .top-img-container {
@@ -810,7 +810,7 @@
     padding-block: 50px 85px;
   }
 
-  .fuga {
+  .review-content {
     display: flex;
     justify-content: center;
     overflow: hidden;
@@ -822,7 +822,7 @@
     position: relative;
   }
 
-  .kome {
+  .review-info {
     display: flex;
     flex-direction: column;
     gap: 60px;
