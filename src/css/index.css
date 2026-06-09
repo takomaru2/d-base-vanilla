@@ -172,8 +172,6 @@
     flex-direction: column;
     row-gap: 50px;
   }
-
-  /*  =================*/
 }
 
 .fixed-bottom-contact-container {
@@ -276,7 +274,6 @@
 }
 
 .top-view-contents-container {
-  /*todo 消す*/
   max-width: 1400px;
   height: 100vh;
   position: relative;
@@ -370,7 +367,6 @@
     justify-content: center;
     column-gap: 70px;
     margin-block: 30px 100px;
-    /*todo*/ /* margin-block要検討 */
   }
 
   .vertical-title {
@@ -477,7 +473,6 @@
   max-width: 100%;
   height: auto;
 
-  /*todo:min-widthだけつけたら何だか良い感じになったぞ。これについてレポーチ*/
   min-width: 0;
 }
 
@@ -493,13 +488,11 @@
   }
 
   .works-img {
-    /*todo*/
     max-width: 100%;
     height: 122px;
   }
 
   .works-img-hero {
-    /*todo*/
     max-width: 100%;
     height: 259px;
   }
@@ -547,7 +540,6 @@
 }
 
 .price-section-container {
-  /*width: 100vw;*/
   min-height: 100vh;
 
   padding: 100px 0 100px 100px;
@@ -643,7 +635,6 @@
   background-color: var(--colorWhite);
   padding-top: var(--section-padding-top);
 
-  /*  todo:wip*/
   padding-inline: 100px;
 }
 
@@ -653,7 +644,6 @@
 }
 
 .section-content {
-  /*todo*/
   max-width: 1400px;
 }
 
@@ -735,7 +725,6 @@
 }
 
 .section-content-wrapper {
-  /*todo: あとで考える*/
   max-width: 1400px;
 }
 
@@ -745,12 +734,9 @@
   gap: 30px;
   padding-block: 90px 120px;
 
-  /*  todo: wip*/
   max-width: 100%;
-  /*  wip*/
 }
 
-/*todo wip やっぱ画像は個別につけなきゃ*/
 .review-img {
   max-width: 100%;
   height: auto;
@@ -762,8 +748,6 @@
   height: auto;
   min-width: 200px;
 }
-
-/*wip*/
 
 .review-car-card {
   display: flex;
@@ -938,7 +922,6 @@
 
   min-width: 0;
 }
-/**/
 @media screen and (max-width: 767px) {
   .access-section-wrapper {
     padding-top: var(--section-padding-top-sp);
@@ -985,7 +968,6 @@
     }
   }
 }
-/**/
 
 .more-button {
   text-align: center;
@@ -997,7 +979,6 @@
   }
 }
 
-/**/
 .question-section-wrapper {
   background-color: var(--colorBlack);
   padding-top: var(--section-padding-top);
@@ -1031,7 +1012,7 @@
   justify-content: space-between;
   align-items: start;
   font-size: var(--font-size-xl);
-  /*todo:widthあとで考える*/
+
   width: 100%;
   margin-inline: auto;
   padding: 30px 50px;
@@ -1057,7 +1038,6 @@
   letter-spacing: 0.05em;
 }
 
-/*======＋アイコン=========*/
 .question-img {
   transform: rotate(45deg);
 }
@@ -1066,9 +1046,7 @@
   transform: rotate(45deg);
   display: none;
 }
-/*=========*/
 
-/*============-アイコン====*/
 .minus-icon-img {
   display: none;
 }
@@ -1077,7 +1055,6 @@
   display: block;
 }
 
-/*=====================*/
 .question-wrapper {
 }
 
@@ -1121,7 +1098,6 @@
   }
 }
 
-/**/
 .footer {
   display: flex;
   flex-direction: column;
