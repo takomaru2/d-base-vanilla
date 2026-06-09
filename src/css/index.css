@@ -102,7 +102,7 @@
   display: none;
 }
 
-.nav-list-sp {
+.mobile-menu {
   display: none;
 }
 
@@ -148,7 +148,7 @@
     letter-spacing: 2px;
   }
 
-  .nav-list-sp.open {
+  .mobile-menu.open {
     background-color: var(--colorBlack);
     color: var(--colorWhite);
     width: 100vw;
@@ -385,6 +385,8 @@
   display: flex;
   justify-content: center;
   padding-top: var(--section-padding-top);
+
+  padding-inline: 100px;
 }
 
 .works-content-wrapper {
@@ -1099,6 +1101,7 @@
 }
 
 .footer {
+  background-color: var(--colorBlack);
   display: flex;
   flex-direction: column;
   padding-block: 150px;

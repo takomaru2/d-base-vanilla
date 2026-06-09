@@ -16,10 +16,10 @@ questions.forEach((question, index) => {
 // ====================> ハンバーガーメニュー <====================
 
 const navMenuSp = document.querySelector(".header-menu-sp");
-const navListSp = document.querySelector(".nav-list-sp");
-const logo = document.querySelector(".nav-list-sp > .logo");
-const closeButton = document.querySelector(".nav-list-sp > .close-button");
-const navMenus = document.querySelectorAll(".nav-list-sp li");
+const navListSp = document.querySelector(".mobile-menu");
+const logo = document.querySelector(".mobile-menu > .logo");
+const closeButton = document.querySelector(".mobile-menu > .close-button");
+const navMenus = document.querySelectorAll(".mobile-menu li");
 
 if (!navMenuSp || !navListSp || !logo || !closeButton) {
   throw new Error("要素が存在しません！！");
