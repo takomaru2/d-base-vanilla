@@ -61,7 +61,7 @@
     color: var(--colorWhite);
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 35px;
     text-align: center;
 
@@ -106,7 +106,7 @@
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .header-menu {
     display: block;
     filter: drop-shadow(1px 1px 4px #434343);
@@ -219,7 +219,7 @@
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .fixed-bottom-contact-container {
     display: none;
   }
@@ -272,11 +272,11 @@
 }
 
 .top-view-section-container {
-  background-color: var(--colorBlack);
   padding: 90px;
 }
 
 .top-view-contents-container {
+  /*todo 消す*/
   max-width: 1400px;
   height: 100vh;
   position: relative;
@@ -301,7 +301,7 @@
   right: 0;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .top-view-section-container {
     padding: 0;
   }
@@ -362,7 +362,7 @@
   letter-spacing: 8px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .vertical-section-container {
     background-color: var(--colorBlack);
     display: flex;
@@ -383,6 +383,7 @@
     font-size: var(--font-size-sm);
   }
 }
+
 .works-section-container {
   background-color: var(--colorWhite);
   display: flex;
@@ -394,7 +395,7 @@
   max-width: 1150px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .works-section-container {
     padding-top: var(--section-padding-top-sp);
   }
@@ -403,18 +404,30 @@
 .before-after-section-sp {
   display: none;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 767px) {
     display: block;
   }
 }
 
 .work-img-container {
+  width: 100%;
   max-width: 1400px;
+
   display: flex;
   justify-content: center;
   column-gap: 50px;
   align-items: end;
   margin-bottom: 240px;
+}
+
+.work-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.works-img-hero {
+  max-width: 100%;
+  height: auto;
 }
 
 .works-car-name {
@@ -445,6 +458,10 @@
   justify-content: space-around;
   margin-bottom: 100px;
   align-items: center;
+
+  width: 100%;
+  max-width: 1400px;
+  margin-inline: auto;
 }
 
 .car-name {
@@ -456,7 +473,15 @@
   transform: rotate(180deg);
 }
 
-@media screen and (max-width: 600px) {
+.before-after-img {
+  max-width: 100%;
+  height: auto;
+
+  /*todo:min-widthだけつけたら何だか良い感じになったぞ。これについてレポーチ*/
+  min-width: 0;
+}
+
+@media screen and (max-width: 767px) {
   .before-after-section {
     display: none;
   }
@@ -468,13 +493,13 @@
   }
 
   .works-img {
-    /*width: 78px;*/
+    /*todo*/
     max-width: 100%;
     height: 122px;
   }
 
   .works-img-hero {
-    /*max-width: 166px;*/
+    /*todo*/
     max-width: 100%;
     height: 259px;
   }
@@ -522,10 +547,10 @@
 }
 
 .price-section-container {
-  width: 100vw;
+  /*width: 100vw;*/
   min-height: 100vh;
-  padding-top: var(--section-padding-top);
-  padding-left: 100px;
+
+  padding: 100px 0 100px 100px;
   background: no-repeat 50% / cover
     url("../../images/top/priceSectionBackImage.jpg");
 }
@@ -573,10 +598,11 @@
   display: inline-block;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .price-section-container {
     padding-block: 50px;
     padding-left: 0;
+    min-height: auto;
   }
 
   .price-card {
@@ -616,6 +642,9 @@
 .coating-product-section-container {
   background-color: var(--colorWhite);
   padding-top: var(--section-padding-top);
+
+  /*  todo:wip*/
+  padding-inline: 100px;
 }
 
 .coating-product-container {
@@ -624,7 +653,8 @@
 }
 
 .section-content {
-  width: 1400px;
+  /*todo*/
+  max-width: 1400px;
 }
 
 .products-container {
@@ -647,7 +677,7 @@
 }
 
 /*sp*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .more-button {
   }
   .coating-product-section-container {
@@ -698,12 +728,15 @@
   color: var(--colorBlack);
   display: flex;
   flex-direction: column;
+
   padding-top: var(--section-padding-top);
+
+  padding-inline: 100px;
 }
 
 .section-content-wrapper {
-  width: 1400px;
-  align-self: center;
+  /*todo: あとで考える*/
+  max-width: 1400px;
 }
 
 .review-img-container {
@@ -711,7 +744,26 @@
   align-items: end;
   gap: 30px;
   padding-block: 90px 120px;
+
+  /*  todo: wip*/
+  max-width: 100%;
+  /*  wip*/
 }
+
+/*todo wip やっぱ画像は個別につけなきゃ*/
+.review-img {
+  max-width: 100%;
+  height: auto;
+  min-width: 100px;
+}
+
+.review-img-large {
+  max-width: 100%;
+  height: auto;
+  min-width: 200px;
+}
+
+/*wip*/
 
 .review-car-card {
   display: flex;
@@ -755,9 +807,10 @@
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .review-section {
     padding-top: var(--section-padding-top-sp);
+    padding-inline: 0;
   }
 
   .review-img-container {
@@ -831,10 +884,13 @@
 .access-section-wrapper {
   background-color: var(--colorBlack);
   padding-top: var(--section-padding-top);
+
+  padding-inline: 100px;
 }
 
 .access-section {
-  width: 1400px;
+  width: 100%;
+  max-width: 1400px;
   margin-inline: auto;
 }
 
@@ -842,11 +898,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  gap: 50px;
 }
 
 .map-text {
   font-size: var(--font-size-lg);
-  width: 545px;
+  width: 500px;
+}
+
+.map {
+  max-width: 100%;
+  height: auto;
+
+  min-width: 0;
 }
 
 .company {
@@ -863,11 +928,21 @@
   display: flex;
   flex-direction: column;
   row-gap: 12px;
+
+  max-width: 500px;
+}
+
+.company-img {
+  max-width: 100%;
+  height: auto;
+
+  min-width: 0;
 }
 /**/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .access-section-wrapper {
     padding-top: var(--section-padding-top-sp);
+    padding-inline: 0;
   }
 
   .access-section {
@@ -917,7 +992,7 @@
   padding-block: 80px;
   border-radius: 2px;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 767px) {
     padding-block: 0 50px;
   }
 }
@@ -929,8 +1004,13 @@
 }
 
 .question-content-wrapper {
-  width: 1400px;
+  max-width: 1400px;
   margin: 0 auto;
+  padding-inline: 100px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .question-list-wrapper {
@@ -951,7 +1031,9 @@
   justify-content: space-between;
   align-items: start;
   font-size: var(--font-size-xl);
-  width: 1000px;
+  /*todo:widthあとで考える*/
+  width: 100%;
+  margin-inline: auto;
   padding: 30px 50px;
   gap: 30px;
 }
@@ -1008,7 +1090,7 @@
   display: block;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .question-section-wrapper {
     padding-top: var(--section-padding-top-sp);
   }
@@ -1026,6 +1108,7 @@
   .question-content-wrapper {
     width: 350px;
     margin: 0 auto;
+    padding-inline: 0;
   }
 
   .question-img {
@@ -1057,7 +1140,7 @@
   padding-top: 30px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .footer-list {
     font-size: var(--font-size-sm);
     gap: 0;
