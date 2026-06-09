@@ -1,0 +1,29 @@
+:root {
+  --main-bg-color: #1c1c1c;
+  --colorBlack: #1c1c1c;
+  --colorWhite: #f8f8f5;
+  --colorPureWhite: #fff;
+  --buttonColor: #4b6583;
+  --questionColor: #0000ff;
+  --answerColor: #ff0000;
+  --verticalColor: #d0a900;
+  --colorShadow: #434343;
+  --flexBottomContactBgColor: #b0b0b0;
+  --lineColor: #1ada29;
+  --colorOrange: #bc611e;
+  --mainFontJP: "Noto Sans JP", sans-serif;
+  --mainFontEN: "Revalia", sans-serif;
+  --subFontEN: "Russo One", sans-serif;
+
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 24px;
+  --font-size-xl: 30px;
+  --font-size-xxl: 40px;
+  --font-size-xxxl: 50px;
+
+  --section-padding-top: 150px;
+  --section-padding-top-sp: 50px;
+  --vwMin: 390px;
+  --vwMax: 1680px;
+}

@@ -1,0 +1,16 @@
+/* サイト固有で、複数ページで再利用する共通スタイルをまとめたファイル */
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  color: var(--colorWhite);
+}
+
+a {
+  color: var(--colorWhite);
+}
+
+.text-paragraph {
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 1rem;
+}
