@@ -270,6 +270,7 @@
 }
 
 .top-view-section-container {
+  background-color: var(--main-bg-color);
   padding: 90px;
 }
 
