@@ -21,7 +21,7 @@
   row-gap: 130px;
   padding-top: 200px;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 767px) {
     row-gap: 60px;
     padding-top: 50px;
     padding-inline: 20px;
@@ -36,14 +36,14 @@
   row-gap: 130px;
   width: 100%;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 767px) {
     row-gap: 60px;
     flex-direction: column;
   }
 }
 
 .car-gallery {
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 767px) {
     width: 100%;
     height: auto;
   }
@@ -64,7 +64,7 @@
   gap: 20px;
   letter-spacing: 2px;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 767px) {
     font-size: var(--font-size-xl);
     justify-content: center;
   }
@@ -106,7 +106,7 @@
 }
 
 .work-process-img {
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 767px) {
     width: 100%;
     height: auto;
   }
@@ -120,7 +120,7 @@
   max-width: 1400px;
   margin-inline: auto;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 767px) {
     padding-top: 50px;
     gap: 50px;
   }
@@ -132,7 +132,7 @@
   gap: 150px;
   align-items: center;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 767px) {
     flex-direction: column;
     gap: 30px;
     padding-inline: 20px;
@@ -149,7 +149,7 @@
   font-size: var(--font-size-xl);
   font-weight: 700;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 767px) {
     font-size: var(--font-size-md);
     align-self: center;
   }
@@ -160,7 +160,7 @@
   letter-spacing: 2px;
   width: 100%;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 767px) {
     font-size: var(--font-size-md);
   }
 }
