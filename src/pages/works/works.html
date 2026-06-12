@@ -25,38 +25,63 @@
       @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Revalia&family=Russo+One&display=swap");
     </style>
   </head>
+
   <body>
-    <div class="works-page-container">
+    <nav class="nav-menu">
+      <a href="#" class="logo">D-base</a>
+
+      <nav class="header-menu">
+        <button class="header-menu-sp">MENU</button>
+      </nav>
+
+      <ul class="nav-list">
+        <li>
+          <a href="#">ホーム</a>
+        </li>
+        <li>
+          <a href="#">施工実績</a>
+        </li>
+        <li>
+          <a href="#">価格表</a>
+        </li>
+        <li>
+          <a href="#">アクセス</a>
+        </li>
+        <li>
+          <a href="#">よくある質問</a>
+        </li>
+        <li>
+          <a href="#">お問い合わせ</a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="mobile-menu">
+      <a href="#" class="logo">D-base</a>
+      <button class="close-button"><span class="close-icon">×</span></button>
+      <ul class="nav-menu-sp">
+        <li>
+          <a href="#">ホーム</a>
+        </li>
+        <li>
+          <a href="#">施工実績</a>
+        </li>
+        <li>
+          <a href="#">価格表</a>
+        </li>
+        <li>
+          <a href="#">アクセス</a>
+        </li>
+        <li>
+          <a href="#">よくある質問</a>
+        </li>
+        <li>
+          <a href="#">お問い合わせ</a>
+        </li>
+      </ul>
+    </nav>
+    <main class="works-page-container">
       <div>
-        <nav class="nav-menu">
-          <a href="#" class="logo">D-base</a>
-
-          <nav class="header-menu">
-            <button class="header-menu-sp">MENU</button>
-          </nav>
-
-          <ul class="nav-list">
-            <li>
-              <a href="#">ホーム</a>
-            </li>
-            <li>
-              <a href="#">施工実績</a>
-            </li>
-            <li>
-              <a href="#">価格表</a>
-            </li>
-            <li>
-              <a href="#">アクセス</a>
-            </li>
-            <li>
-              <a href="#">よくある質問</a>
-            </li>
-            <li>
-              <a href="#">お問い合わせ</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="top-view-section-container">
+        <header class="top-view-section-container">
           <div class="top-view-contents-container">
             <div class="top-view-text-container">
               <h2 class="section-title white">
@@ -75,12 +100,13 @@
               />
             </div>
           </div>
-        </div>
+        </header>
         <div class="before-after-section-wrapper">
           <div class="before-after-section">
             <div class="car-name">SUZUKI Jimny</div>
             <div>
               <img
+                class="before-after-img"
                 src="../../../images/top/beforeafter-pc.jpg"
                 alt="施工前と施工後の比較の写真"
                 width="1250"
@@ -92,6 +118,7 @@
             <div class="car-name">SUZUKI Jimny</div>
             <div>
               <img
+                class="before-after-img"
                 src="../../../images/top/beforeafter-pc.jpg"
                 alt="施工前と施工後の比較の写真"
                 width="1250"
@@ -100,6 +127,74 @@
             </div>
           </div>
         </div>
+
+        <div class="before-after-section-sp">
+          <div class="before-after-card-sp-container">
+            <div style="color: black; text-align: center; font-size: 20px">
+              SUZUKI
+            </div>
+            <div class="before-after-card-sp">
+              <div class="before-after-card-text-wrapper">
+                <div class="before-after-card-text">Before</div>
+              </div>
+              <img
+                alt="コーティング施工前の車のボディ"
+                src="../../../images/top/before.jpg"
+                width="257"
+                height="192"
+              />
+            </div>
+
+            <div class="before-after-card-sp">
+              <div class="before-after-card-text-wrapper">
+                <div class="before-after-card-text">After</div>
+                <div class="before-after-card-meta">
+                  ¥200,000<br />
+                  全2週間
+                </div>
+              </div>
+              <img
+                alt="コーティング施工後の車のボディ"
+                src="../../../images/top/before.jpg"
+                width="257"
+                height="192"
+              />
+            </div>
+          </div>
+          <div class="before-after-card-sp-container">
+            <div style="color: black; text-align: center; font-size: 20px">
+              SUZUKI
+            </div>
+            <div class="before-after-card-sp">
+              <div class="before-after-card-text-wrapper">
+                <div class="before-after-card-text">Before</div>
+              </div>
+              <img
+                alt="コーティング施工前の車のボディ"
+                src="../../../images/top/before.jpg"
+                width="257"
+                height="192"
+              />
+            </div>
+
+            <div class="before-after-card-sp">
+              <div class="before-after-card-text-wrapper">
+                <div class="before-after-card-text">After</div>
+                <div class="before-after-card-meta">
+                  ¥200,000<br />
+                  全2週間
+                </div>
+              </div>
+              <img
+                src="../../../images/top/before.jpg"
+                alt="コーティング施工後の車のボディ"
+                width="257"
+                height="192"
+              />
+            </div>
+          </div>
+        </div>
+
         <!--        固有-->
         <div class="works-intro-wrapper">
           <div class="works-intro">
@@ -240,37 +335,6 @@
               />
             </div>
           </div>
-
-          <section>
-            <footer class="footer">
-              <ul class="footer-list">
-                <li>
-                  <a href="#" class="footer-link">ホーム</a>
-                </li>
-                <li>
-                  <a href="#" class="footer-link">施工実績</a>
-                </li>
-                <li>
-                  <a href="#" class="footer-link">価格表</a>
-                </li>
-                <li>
-                  <a href="#" class="footer-link">アクセス</a>
-                </li>
-                <li>
-                  <a href="#" class="footer-link">よくある質問</a>
-                </li>
-                <li>
-                  <a href="#" class="footer-link">お問い合わせ</a>
-                </li>
-                <li>
-                  <a href="#" class="footer-link">プライバシーポリシー</a>
-                </li>
-              </ul>
-              <div class="logo-wrapper">
-                <a href="#" class="logo">D-base</a>
-              </div>
-            </footer>
-          </section>
         </div>
         <div class="fixed-bottom-contact-container-sp">
           <div class="fixed-bottom-contact-sp">
@@ -331,6 +395,35 @@
           </div>
         </div>
       </div>
-    </div>
+    </main>
+    <footer class="footer">
+      <ul class="footer-list">
+        <li>
+          <a href="#" class="footer-link">ホーム</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">施工実績</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">価格表</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">アクセス</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">よくある質問</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">お問い合わせ</a>
+        </li>
+        <li>
+          <a href="#" class="footer-link">プライバシーポリシー</a>
+        </li>
+      </ul>
+      <div class="logo-wrapper">
+        <a href="#" class="logo">D-base</a>
+      </div>
+    </footer>
+    <script src="../../shared/js/script.js"></script>
   </body>
 </html>
