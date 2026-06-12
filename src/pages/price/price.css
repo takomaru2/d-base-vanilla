@@ -123,3 +123,62 @@
 }
 
 /*sp*/
+
+/*ここからnotesセクション*/
+
+.coating-guide {
+  max-width: 1400px;
+
+  background-image: url("../../../images/price/craftSelectionCard.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-color: #434343;
+
+  padding-top: 220px;
+
+  .title {
+    text-align: left;
+    padding-inline: 80px;
+  }
+
+  .message {
+    text-align: left;
+
+    padding-inline: 80px;
+    padding-block: 40px;
+  }
+
+  .attention {
+    padding-bottom: 20px;
+    padding-left: 20px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-top: 20px;
+
+    .title {
+      text-align: center;
+      padding-inline: 0;
+    }
+
+    .message {
+      text-align: center;
+      padding-inline: 0;
+    }
+
+    .attention {
+      display: none;
+    }
+  }
+}
+
+/*SP時のみsectionのpaddingがなくなるので上書きでpaddingを消すクラスを作成*/
+.section-padding-ignore {
+  @media screen and (max-width: 767px) {
+    padding-block: 0;
+    padding-inline: 0;
+  }
+}
+
+/*ここまでnotesセクション*/
