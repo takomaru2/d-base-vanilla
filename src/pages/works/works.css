@@ -1,5 +1,15 @@
+.before-after-section-wrapper {
+  padding: 100px 100px;
+
+  @media screen and (max-width: 767px) {
+    padding: 50px 20px;
+  }
+}
+
 .before-after-section {
-  padding-top: var(--section-padding-top);
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 /*================*/
@@ -7,7 +17,16 @@
 .works-intro-wrapper {
   /*画面幅が1000でも2000でも画面幅いっぱいに背景はつく*/
   background-color: var(--colorBlack);
+  padding: 100px 100px;
+
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+
+  @media screen and (max-width: 767px) {
+    padding: 50px 20px;
+  }
 }
 
 .works-intro {
@@ -19,12 +38,11 @@
   flex-direction: column;
 
   row-gap: 130px;
-  padding-top: 200px;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 767px) {
     row-gap: 60px;
-    padding-top: 50px;
-    padding-inline: 20px;
+    /*padding-top: 50px;*/
+    /*padding-inline: 20px;*/
   }
 }
 
@@ -36,14 +54,19 @@
   row-gap: 130px;
   width: 100%;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 767px) {
     row-gap: 60px;
     flex-direction: column;
+    padding-inline: 0;
   }
 }
 
 .car-gallery {
-  @media screen and (max-width: 375px) {
+  width: 100%;
+  height: auto;
+  min-width: 350px;
+
+  @media screen and (max-width: 767px) {
     width: 100%;
     height: auto;
   }
@@ -64,7 +87,7 @@
   gap: 20px;
   letter-spacing: 2px;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 767px) {
     font-size: var(--font-size-xl);
     justify-content: center;
   }
@@ -103,14 +126,25 @@
 /*============================*/
 .process-bg-color {
   background-color: var(--colorBlack);
+
+  /*  こいつにつけて良いのかは一考の余地あり*/
+  padding-inline: 100px;
+
+  @media screen and (max-width: 767px) {
+    padding-inline: 20px;
+  }
 }
 
 .work-process-img {
-  @media screen and (max-width: 375px) {
+  width: 100%;
+  height: auto;
+
+  @media screen and (max-width: 767px) {
     width: 100%;
     height: auto;
   }
 }
+
 .process {
   display: flex;
   flex-direction: column;
@@ -120,7 +154,7 @@
   max-width: 1400px;
   margin-inline: auto;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 767px) {
     padding-top: 50px;
     gap: 50px;
   }
@@ -132,10 +166,9 @@
   gap: 150px;
   align-items: center;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 767px) {
     flex-direction: column;
     gap: 30px;
-    padding-inline: 20px;
   }
 }
 
@@ -149,7 +182,7 @@
   font-size: var(--font-size-xl);
   font-weight: 700;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 767px) {
     font-size: var(--font-size-md);
     align-self: center;
   }
@@ -160,7 +193,7 @@
   letter-spacing: 2px;
   width: 100%;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 767px) {
     font-size: var(--font-size-md);
   }
 }
