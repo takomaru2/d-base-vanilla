@@ -35,14 +35,19 @@
   justify-content: center;
   z-index: 2;
 
+  /**/
+  overflow: hidden;
+
   @media screen and (max-width: 767px) {
     display: none;
   }
 }
+
 .price-page-price-card {
   min-width: 0;
   flex: 1;
 }
+
 .price-text-wrapper {
   background-image: url("../../../images/price/cardPolymer.jpg");
   background-repeat: no-repeat;
@@ -56,6 +61,12 @@
   padding-inline: 20px;
 
   text-align: center;
+
+  transition-duration: 0.5s;
+  &:hover {
+    transition: transform 0.3s ease;
+    transform: translateY(-5px);
+  }
 
   .price {
     font-size: var(--font-size-xxxl);
