@@ -97,6 +97,8 @@ a {
   }
 
   @media screen and (max-width: 767px) {
+    padding-block: 50px 150px;
+
     .footer-list {
       font-size: var(--font-size-sm);
       gap: 0;
