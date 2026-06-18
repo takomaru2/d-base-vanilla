@@ -1,0 +1,11 @@
+.logo {
+  font-size: var(--font-size-xxl);
+  font-family: var(--mainFontEN);
+  text-shadow: 2px 2px 4px var(--colorBlack);
+
+  @media screen and (max-width: 767px) {
+    font-size: var(--font-size-lg);
+    text-align: center;
+    letter-spacing: 2px;
+  }
+}

@@ -1,5 +1,5 @@
 /*このセクション固有の赤いやつはsectionには入れない！*/
-.section.decoration-line {
+.decoration-line {
   position: relative;
   z-index: 1;
 
