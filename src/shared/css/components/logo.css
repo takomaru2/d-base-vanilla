@@ -1,6 +1,7 @@
 .logo {
-  font-size: var(--font-size-xxl);
   font-family: var(--mainFontEN);
+  /*todo :変数化の検討;*/
+  font-size: clamp(28px, 3.5vw, 40px);
   text-shadow: 2px 2px 4px var(--colorBlack);
 
   @media screen and (max-width: 767px) {

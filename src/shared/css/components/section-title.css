@@ -1,5 +1,7 @@
 .section-title {
   margin-bottom: 100px;
+  /*あえて固定値でつけているが、問題が出たら変更を考える*/
+  margin-inline: 20px;
 
   .ja {
     font-weight: bold;
