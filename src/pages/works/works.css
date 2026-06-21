@@ -1,0 +1,244 @@
+.top-view-section-container {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+/*sp*/
+.top-view-section-container-sp {
+  display: none;
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--colorBlack);
+  }
+}
+
+/*todo このクラスは後に切り出しなどを考えたい*/
+.works-top-view-sp-padding {
+  padding-block: 100px;
+}
+
+.top-view-image-sp {
+  width: 100%;
+  height: auto;
+}
+
+/*sp*/
+
+.before-after-section-wrapper {
+  padding: 100px 100px;
+
+  @media screen and (max-width: 767px) {
+    padding: 50px 20px;
+  }
+}
+
+.before-after-section {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+/*todo: ここも後に共通化する;*/
+.before-after-car-name {
+  text-align: center;
+  font-size: var(--font-size-md);
+  font-family: var(--subFontEN);
+  font-weight: bold;
+  color: var(--colorBlack);
+}
+
+/*================*/
+/*親で幅決める、子供は固定値つけない*/
+.works-intro-wrapper {
+  /*画面幅が1000でも2000でも画面幅いっぱいに背景はつく*/
+  background-color: var(--colorBlack);
+  padding: 100px 100px;
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+
+  @media screen and (max-width: 767px) {
+    padding: 50px 20px;
+  }
+}
+
+.works-intro {
+  width: 100%;
+  max-width: 1400px;
+  margin-inline: auto;
+
+  display: flex;
+  flex-direction: column;
+
+  row-gap: 130px;
+
+  @media screen and (max-width: 767px) {
+    row-gap: 60px;
+    /*padding-top: 50px;*/
+    /*padding-inline: 20px;*/
+  }
+}
+
+.works-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 100px;
+  row-gap: 130px;
+  width: 100%;
+
+  @media screen and (max-width: 767px) {
+    row-gap: 60px;
+    flex-direction: column;
+    padding-inline: 0;
+  }
+}
+
+.car-gallery {
+  width: 100%;
+  height: auto;
+  min-width: 350px;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.work-details {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.work-detail-title {
+  font-family: var(--subFontEN);
+  font-size: var(--font-size-xxxl);
+
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+  letter-spacing: 2px;
+
+  @media screen and (max-width: 767px) {
+    font-size: var(--font-size-xl);
+    justify-content: center;
+  }
+}
+
+.work-detail-item {
+  font-size: var(--font-size-lg);
+
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 15px 50px;
+  letter-spacing: 1px;
+
+  position: relative;
+  border-bottom: 1px solid var(--colorWhite);
+
+  &::before {
+    background-color: var(--colorWhite);
+    position: absolute;
+    top: 33px;
+    left: -4px;
+    width: 5px;
+    height: 5px;
+    content: "";
+    border-radius: 50%;
+    z-index: 100;
+  }
+}
+
+.work-report {
+  font-size: var(--font-size-md);
+  width: 100%;
+  margin-inline: auto;
+}
+
+/*============================*/
+.process-bg-color {
+  background-color: var(--colorBlack);
+
+  /*  こいつにつけて良いのかは一考の余地あり*/
+  padding-inline: 100px;
+
+  @media screen and (max-width: 767px) {
+    padding-inline: 20px;
+  }
+}
+
+.work-process-img {
+  width: 100%;
+  height: auto;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.process {
+  display: flex;
+  flex-direction: column;
+  padding-top: 150px;
+  gap: 150px;
+
+  max-width: 1400px;
+  margin-inline: auto;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 50px;
+    gap: 50px;
+  }
+}
+
+/*施工プロセスの説明*/
+.work-process {
+  display: flex;
+  gap: 150px;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.work-process-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.work-process-title {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+
+  @media screen and (max-width: 767px) {
+    font-size: var(--font-size-md);
+    align-self: center;
+  }
+}
+
+.work-process-description {
+  font-size: var(--font-size-lg);
+  letter-spacing: 2px;
+  width: 100%;
+
+  @media screen and (max-width: 767px) {
+    font-size: var(--font-size-md);
+  }
+}
+
+.company-wrapper {
+  width: 100%;
+  max-width: 1400px;
+  margin-inline: auto;
+}

@@ -270,6 +270,7 @@
 }
 
 .top-view-section-container {
+  background-color: var(--main-bg-color);
   padding: 90px;
 }
 
@@ -312,13 +313,6 @@
 
   .top-view-text {
     font-size: var(--font-size-lg);
-    letter-spacing: 2px;
-  }
-
-  .logo {
-    font-family: "Revalia", sans-serif;
-    font-size: var(--font-size-lg);
-    text-align: center;
     letter-spacing: 2px;
   }
 
@@ -546,7 +540,7 @@
 
   padding: 100px 0 100px 100px;
   background: no-repeat 50% / cover
-    url("../../images/top/priceSectionBackImage.jpg");
+    url("../../../images/top/priceSectionBackImage.jpg");
 }
 
 .price-plan {
@@ -625,11 +619,6 @@
 
   .link-button-wrapper {
     align-self: center;
-  }
-
-  .link-button {
-    font-size: var(--font-size-sm);
-    padding: 10px 25px;
   }
 }
 
@@ -1072,31 +1061,32 @@
 @media screen and (max-width: 767px) {
   .question-section-wrapper {
     padding-top: var(--section-padding-top-sp);
-  }
 
-  .button-flex {
-    width: 350px;
-    font-size: var(--font-size-sm);
-    padding: 15px 30px;
-
-    .qa-icon {
+    .button-flex {
+      width: 350px;
       font-size: var(--font-size-sm);
+      padding: 15px 30px;
+
+      .qa-icon {
+        font-size: var(--font-size-sm);
+      }
     }
-  }
 
-  .question-content-wrapper {
-    width: 350px;
-    margin: 0 auto;
-    padding-inline: 0;
-  }
+    .question-content-wrapper {
+      width: 350px;
+      margin: 0 auto;
+      padding-inline: 0;
+    }
 
-  .question-img {
-    width: 15px;
-    height: 15px;
-  }
-  .minus-icon-img {
-    width: 15px;
-    height: 15px;
+    .question-img {
+      width: 15px;
+      height: 15px;
+    }
+
+    .minus-icon-img {
+      width: 15px;
+      height: 15px;
+    }
   }
 }
 
@@ -1128,14 +1118,5 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-  }
-
-  .footer-link {
-    padding: 8px 20px;
-    display: inline-block;
-  }
-
-  .footer {
-    padding-block: 30px 120px;
   }
 }
