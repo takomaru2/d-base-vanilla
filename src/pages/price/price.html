@@ -3,11 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>d-base-vanilla</title>
+    <title>d-base</title>
     <link rel="stylesheet" href="../../shared/css/reset.css" />
-    <link rel="stylesheet" href="../top/index.css" />
     <link rel="stylesheet" href="../../shared/css/variables.css" />
     <link rel="stylesheet" href="../../shared/css/components.css" />
+    <link rel="stylesheet" href="../../shared/css/components/nav-menu.css" />
+    <link rel="stylesheet" href="../../shared/css/components/logo.css" />
+    <link rel="stylesheet" href="../../shared/css/components/footer.css" />
+    <link rel="stylesheet" href="../../shared/css/components/section.css" />
+    <link
+      rel="stylesheet"
+      href="../../shared/css/components/section-title.css"
+    />
+    <link rel="stylesheet" href="price.css" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Revalia&family=Russo+One&display=swap"
       rel="stylesheet"
@@ -15,6 +24,164 @@
   </head>
 
   <body>
-    <h1 style="color: black">価格表セクション開始</h1>
+    <nav class="nav-menu">
+      <a href="#" class="logo">D-base</a>
+
+      <nav class="header-menu">
+        <button class="header-menu-sp">MENU</button>
+      </nav>
+
+      <ul class="nav-list">
+        <li>
+          <a href="#">ホーム</a>
+        </li>
+        <li>
+          <a href="#">施工実績</a>
+        </li>
+        <li>
+          <a href="#">価格表</a>
+        </li>
+        <li>
+          <a href="#">アクセス</a>
+        </li>
+        <li>
+          <a href="#">よくある質問</a>
+        </li>
+        <li>
+          <a href="#">お問い合わせ</a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="mobile-menu">
+      <a href="#" class="logo">D-base</a>
+      <button class="close-button"><span class="close-icon">×</span></button>
+      <ul class="nav-menu-sp">
+        <li>
+          <a href="#">ホーム</a>
+        </li>
+        <li>
+          <a href="#">施工実績</a>
+        </li>
+        <li>
+          <a href="#">価格表</a>
+        </li>
+        <li>
+          <a href="#">アクセス</a>
+        </li>
+        <li>
+          <a href="#">よくある質問</a>
+        </li>
+        <li>
+          <a href="#">お問い合わせ</a>
+        </li>
+      </ul>
+    </nav>
+    <main class="price-page-container">
+      <section class="section white decoration-line">
+        <h1 class="section-title">
+          <span class="ja">価格表</span>
+          <span class="en">Price</span>
+        </h1>
+
+        <div class="price-card-wrapper">
+          <a href="#" class="price-page-price-card">
+            <div class="price-text-wrapper polymer">
+              <div class="price">¥ 134,100~</div>
+              <div class="description">
+                青空駐車専用圧倒的なコスパ <br />とっても綺麗！！
+              </div>
+            </div>
+            <div class="liquid-name">Polymer Coat</div>
+          </a>
+          <a href="#" class="price-page-price-card">
+            <div class="price-text-wrapper ns-10h">
+              <div class="price">¥ 234,100~</div>
+              <div class="description">
+                圧倒的な艶と耐久性 <br />長く愛車を守ります！
+              </div>
+            </div>
+            <div class="liquid-name">NS-10H</div>
+          </a>
+          <a href="#" class="price-page-price-card">
+            <div class="price-text-wrapper nasiol">
+              <div class="price">¥ 334,100~</div>
+              <div class="description">
+                深みのある光沢感 <br />新車以上の輝きを
+              </div>
+            </div>
+            <div class="liquid-name">Nasiol</div>
+          </a>
+          <a href="#" class="price-page-price-card">
+            <div class="price-text-wrapper kube-bond">
+              <div class="price">¥ 434,100~</div>
+              <div class="description">
+                最高峰のコーティング性能 <br />究極の美しさを実現！
+              </div>
+            </div>
+            <div class="liquid-name">Kubebond</div>
+          </a>
+        </div>
+        <!--===========================sp=======================================-->
+        <div class="price-card-wrapper-sp">
+          <a href="#" class="price-card-price-page-sp">
+            <img
+              class="price-card-img-sp"
+              src="../../../images/price/cardPolymer.jpg"
+              width="340"
+              height="340"
+              alt="車の側面を磨いている"
+            />
+            <div class="liquid-name">Polymer Coat</div>
+            <div class="price">¥ 134,100~</div>
+            <div class="description">
+              青空駐車専用圧倒的なコスパ <br />とっても綺麗！！
+            </div>
+          </a>
+          <a href="#" class="price-card-price-page-sp">
+            <img
+              class="price-card-img-sp"
+              src="../../../images/price/cardNS10H.jpg"
+              width="340"
+              height="340"
+              alt="車の側面を磨いている"
+            />
+            <div class="liquid-name">NS-10H</div>
+            <div class="price">¥ 234,100~</div>
+            <div class="description">
+              圧倒的な艶と耐久性 <br />長く愛車を守ります！
+            </div>
+          </a>
+          <a href="#" class="price-card-price-page-sp">
+            <img
+              class="price-card-img-sp"
+              src="../../../images/price/cardNasiol.jpg"
+              width="340"
+              height="340"
+              alt="車の側面を磨いている"
+            />
+            <div class="liquid-name">Nasiol</div>
+            <div class="price">¥ 334,100~</div>
+            <div class="description">
+              深みのある光沢感 <br />新車以上の輝きを
+            </div>
+          </a>
+          <a href="#" class="price-card-price-page-sp">
+            <img
+              class="price-card-img-sp"
+              src="../../../images/price/cardKubebond.jpg"
+              width="340"
+              height="340"
+              alt="車の側面を磨いている"
+            />
+            <div class="liquid-name">Kubebond</div>
+            <div class="price">¥ 434,100~</div>
+            <div class="description">
+              最高峰のコーティング性能 <br />究極の美しさを実現！
+            </div>
+          </a>
+        </div>
+        <!--===========================sp=======================================-->
+      </section>
+    </main>
   </body>
 </html>
