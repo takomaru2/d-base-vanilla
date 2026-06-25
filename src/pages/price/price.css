@@ -133,13 +133,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: overlay;
-  background-color: #434343;
+  background-color: var(--colorShadow);
 
   padding-top: 220px;
 
   .title {
     text-align: left;
     padding-inline: 80px;
+    font-size: clamp(18px, 3vw, 30px);
   }
 
   .message {
@@ -147,11 +148,23 @@
 
     padding-inline: 80px;
     padding-block: 40px;
+
+    font-size: clamp(12px, 2vw, 20px);
   }
 
   .attention {
     padding-bottom: 20px;
     padding-left: 20px;
+    opacity: 0.7;
+    font-weight: lighter;
+
+    .attention-title {
+      font-size: clamp(12px, 2vw, 20px);
+    }
+
+    .attention-list {
+      font-size: clamp(12px, 2vw, 20px);
+    }
   }
 
   @media screen and (max-width: 767px) {
@@ -180,5 +193,3 @@
     padding-inline: 0;
   }
 }
-
-/*ここまでnotesセクション*/
