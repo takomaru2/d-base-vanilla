@@ -219,12 +219,16 @@
     border-radius: 2px;
     display: flex;
     gap: 5px;
+    flex-wrap: wrap;
 
     padding: 30px 15px;
 
     @media screen and (max-width: 767px) {
       font-size: var(--font-size-sm);
     }
+  }
+  .car-models li:not(:last-child)::after {
+    content: "/";
   }
 }
 
