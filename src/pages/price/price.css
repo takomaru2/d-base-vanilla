@@ -216,6 +216,9 @@
   .car-models {
     font-size: var(--font-size-xl);
     background-color: var(--colorWhite);
+    border-radius: 2px;
+    display: flex;
+    gap: 5px;
 
     padding: 30px 15px;
 
@@ -232,7 +235,7 @@
 
   font-size: var(--font-size-xl);
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 2px;
 
   padding: 30px 30px;
 
