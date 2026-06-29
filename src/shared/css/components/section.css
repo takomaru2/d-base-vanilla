@@ -1,0 +1,21 @@
+.section {
+  /*  責務はbg-color   セクション単位でのpadding  */
+
+  padding-block: 80px;
+  padding-inline: calc((100vw - 1200px) / 2);
+
+  &.white {
+    background-color: var(--colorWhite);
+    color: var(--colorBlack);
+  }
+
+  &.black {
+    background-color: var(--colorBlack);
+    color: var(--colorWhite);
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-block: 60px;
+    padding-inline: 10px;
+  }
+}
