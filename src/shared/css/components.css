@@ -1,5 +1,4 @@
 /* サイト固有で、複数ページで再利用する共通スタイルをまとめたファイル */
-/*　こうなると粒度が合わなくてこいつら置くところ考えなければ*/
 body {
   font-family: "Noto Sans JP", sans-serif;
   color: var(--colorWhite);

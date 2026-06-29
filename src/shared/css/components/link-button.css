@@ -1,0 +1,14 @@
+.link-button {
+  font-size: var(--font-size-xl);
+  padding: 30px 90px;
+  font-weight: bold;
+  background-color: var(--buttonColor);
+  border-radius: 2px;
+  color: var(--colorWhite);
+  display: inline-block;
+
+  @media screen and (max-width: 767px) {
+    font-size: var(--font-size-sm);
+    padding: 10px 25px;
+  }
+}

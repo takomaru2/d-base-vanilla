@@ -1,0 +1,38 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding-block: 150px;
+
+  .footer-list {
+    display: flex;
+    gap: 60px;
+    font-size: var(--font-size-lg);
+    justify-content: center;
+  }
+
+  .logo-wrapper {
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  @media screen and (max-width: 767px) {
+    .footer-list {
+      font-size: var(--font-size-sm);
+      gap: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .footer-link {
+      padding: 8px 20px;
+      display: inline-block;
+    }
+
+    .footer {
+      padding-block: 30px 120px;
+    }
+  }
+}
