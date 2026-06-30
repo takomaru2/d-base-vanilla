@@ -1,3 +1,33 @@
+.top-view-section-container {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+/*sp*/
+.top-view-section-container-sp {
+  display: none;
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--colorBlack);
+  }
+}
+
+/*todo このクラスは後に切り出しなどを考えたい*/
+.works-top-view-sp-padding {
+  padding-block: 100px;
+}
+
+.top-view-image-sp {
+  width: 100%;
+  height: auto;
+}
+
+/*sp*/
+
 .before-after-section-wrapper {
   padding: 100px 100px;
 
@@ -10,6 +40,15 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+}
+
+/*todo: ここも後に共通化する;*/
+.before-after-car-name {
+  text-align: center;
+  font-size: var(--font-size-md);
+  font-family: var(--subFontEN);
+  font-weight: bold;
+  color: var(--colorBlack);
 }
 
 /*================*/
