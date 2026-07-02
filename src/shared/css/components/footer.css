@@ -1,12 +1,13 @@
 .footer {
+  background-color: var(--colorBlack);
   display: flex;
   flex-direction: column;
   padding-block: 150px;
 
   .footer-list {
     display: flex;
-    gap: 60px;
-    font-size: var(--font-size-lg);
+    gap: clamp(20px, 4vw, 60px);
+    font-size: clamp(var(--font-size-md), 2vw, var(--font-size-lg));
     justify-content: center;
   }
 
