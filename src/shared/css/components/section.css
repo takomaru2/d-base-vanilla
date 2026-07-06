@@ -2,7 +2,7 @@
   /*  責務はbg-color   セクション単位でのpadding  */
 
   padding-block: 80px;
-  padding-inline: calc((100vw - 1200px) / 2);
+  padding-inline: max(20px, calc((100vw - 1200px) / 2));
 
   &.white {
     background-color: var(--colorWhite);
