@@ -396,7 +396,7 @@ details[open] summary {
       bottom: 0;
       font-size: 40px;
       font-weight: 700;
-      color: #1c1c1c;
+      color: var(--colorBlack);
       content: "…";
       animation: textColor 1.5s infinite alternate;
     }
@@ -422,12 +422,7 @@ details[open] summary {
   .detail-card-size {
     display: flex;
     justify-content: space-between;
-  }
-
-  .detail-card-size {
-    display: flex;
     font-weight: bold;
-    /*gap: 100px;*/
     gap: clamp(50px, 1vw, 100px);
     font-size: clamp(20px, 2.5vw, 30px);
   }
