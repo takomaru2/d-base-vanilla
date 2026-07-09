@@ -33,6 +33,7 @@
 }
 
 .price-text-wrapper {
+  background-image: url("../../../images/price/cardPolymer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -41,12 +42,13 @@
   border-radius: 5px;
 
   padding-top: 40px;
-  padding-inline: 15px;
+  padding-inline: 20px;
 
   text-align: center;
 
   transition: transform 0.3s ease;
   &:hover {
+    transition: transform 0.3s ease;
     transform: translateY(-5px);
   }
 
@@ -206,3 +208,88 @@
     padding-inline: 0;
   }
 }
+
+/*ここまでcoating-guideセクション*/
+
+/*ここからサイズ表セクション*/
+.size-chart-bg {
+  background-color: var(--colorPureWhite);
+  color: var(--colorBlack);
+}
+
+.detail-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .attention {
+    display: none;
+    @media screen and (max-width: 767px) {
+      display: block;
+      font-size: 10px;
+    }
+  }
+}
+
+.size-chart {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  border-radius: 2px;
+
+  @media screen and (max-width: 767px) {
+    padding: 0;
+  }
+
+  .car-models {
+    font-size: var(--font-size-xl);
+    background-color: var(--colorWhite);
+    border-radius: 2px;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+
+    padding: 30px 15px;
+
+    @media screen and (max-width: 767px) {
+      font-size: var(--font-size-sm);
+    }
+  }
+  .car-models li:not(:last-child)::after {
+    content: "/";
+  }
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--colorWhite);
+
+  font-size: var(--font-size-xl);
+  font-weight: bold;
+  border-radius: 2px;
+
+  padding: 30px 30px;
+
+  .minus-icon {
+    display: none;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: var(--font-size-sm);
+    padding: 20px 40px;
+  }
+}
+
+/*アコーディオンOPEN時*/
+details[open] summary {
+  .plus-icon {
+    display: none;
+  }
+  .minus-icon {
+    display: block;
+  }
+}
+
+/*detail,summaryタグでデフォルトのマーカーがflexすると消えたの何で？*/
+/*ここまでサイズ表セクション*/
