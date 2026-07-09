@@ -1,5 +1,4 @@
-/*bodyから外したけど結局こっちにつけているぞ。。。*/
-.privacy-container-wrapper {
+.container {
   background-color: var(--colorBlack);
 }
 
