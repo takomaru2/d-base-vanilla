@@ -7,14 +7,6 @@
   background-color: var(--colorBlack);
 }
 
-.privacy-container-wrapper {
-  /*padding-inline: 50px;*/
-
-  @media screen and (max-width: 767px) {
-    padding-inline: 0;
-  }
-}
-
 .privacy-container {
   font-size: var(--font-size-md-lg);
   font-weight: 300;
@@ -30,7 +22,6 @@
 
 .policy-article-title {
   font-size: var(--font-size-xl);
-
   @media (max-width: 767px) {
     font-size: var(--font-size-md-lg);
   }
