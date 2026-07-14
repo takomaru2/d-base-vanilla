@@ -635,28 +635,6 @@
       height: 200px;
     }
   }
-
-  .company {
-    flex-direction: column-reverse;
-    margin-top: 35px;
-    position: relative;
-    white-space: nowrap;
-
-    .company-text {
-      font-size: var(--font-size-sm);
-      position: absolute;
-      row-gap: 12px;
-
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    .company-img {
-      width: 340px;
-      height: 200px;
-    }
-  }
 }
 
 .question-section-wrapper {
