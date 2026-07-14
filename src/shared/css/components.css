@@ -5,6 +5,10 @@ body {
   color: var(--colorWhite);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   color: var(--colorWhite);
 }
