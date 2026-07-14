@@ -3,101 +3,6 @@
   background-color: var(--colorBlack);
 }
 
-.fixed-bottom-contact-container {
-  width: 100vw;
-  height: 90px;
-  background-color: var(--flexBottomContactBgColor);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 100;
-  padding-inline: 140px;
-}
-
-.tel-number {
-  font-size: var(--font-size-xxl);
-  letter-spacing: 2px;
-}
-.shop-info-list {
-  font-size: var(--font-size-lg);
-  display: flex;
-  gap: 30px;
-}
-
-.line-link-button-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.line-form-container {
-  font-size: var(--font-size-md);
-}
-
-.line-green {
-  color: var(--lineColor);
-}
-
-.fixed-bottom-contact-container-sp {
-  display: none;
-}
-
-@media screen and (max-width: 767px) {
-  .fixed-bottom-contact-container {
-    display: none;
-  }
-
-  .fixed-bottom-contact-container-sp {
-    display: block;
-    background-color: var(--flexBottomContactBgColor);
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 90px;
-    z-index: 100;
-  }
-
-  .fixed-bottom-contact-sp {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .line-link-button-container-sp {
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
-  }
-
-  .tel-number-sp {
-    font-size: var(--font-size-lg);
-    text-align: center;
-    letter-spacing: 2px;
-  }
-
-  .line-icon {
-    width: 30px;
-    height: 30px;
-  }
-
-  .shop-info-list-sp {
-    font-size: var(--font-size-sm);
-    display: flex;
-    column-gap: 15px;
-  }
-
-  .line-form-container {
-    font-size: var(--font-size-sm);
-  }
-}
-
 .top-view-section-container {
   background-color: var(--main-bg-color);
   padding: 90px;
@@ -405,16 +310,6 @@
   row-gap: 50px;
 }
 
-.link-button {
-  font-weight: bold;
-  background-color: var(--buttonColor);
-  border-radius: 2px;
-  color: var(--colorWhite);
-  font-size: var(--font-size-xl);
-  padding: 30px 90px;
-  display: inline-block;
-}
-
 @media screen and (max-width: 767px) {
   .price-section-container {
     padding-block: 50px;
@@ -718,30 +613,6 @@
   min-width: 0;
 }
 
-.company {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 140px;
-}
-
-.company-text {
-  font-size: var(--font-size-lg);
-  text-align: center;
-  line-height: 1.6;
-  display: flex;
-  flex-direction: column;
-  row-gap: 12px;
-
-  max-width: 500px;
-}
-
-.company-img {
-  max-width: 100%;
-  height: auto;
-
-  min-width: 0;
-}
 @media screen and (max-width: 767px) {
   .access-section-wrapper {
     padding-top: var(--section-padding-top-sp);
@@ -764,38 +635,6 @@
       width: 340px;
       height: 200px;
     }
-  }
-
-  .company {
-    flex-direction: column-reverse;
-    margin-top: 35px;
-    position: relative;
-    white-space: nowrap;
-
-    .company-text {
-      font-size: var(--font-size-sm);
-      position: absolute;
-      row-gap: 12px;
-
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    .company-img {
-      width: 340px;
-      height: 200px;
-    }
-  }
-}
-
-.more-button {
-  text-align: center;
-  padding-block: 80px;
-  border-radius: 2px;
-
-  @media screen and (max-width: 767px) {
-    padding-block: 0 50px;
   }
 }
 
@@ -917,25 +756,6 @@
       height: 15px;
     }
   }
-}
-
-.footer {
-  background-color: var(--colorBlack);
-  display: flex;
-  flex-direction: column;
-  padding-block: 150px;
-}
-
-.footer-list {
-  display: flex;
-  gap: 60px;
-  font-size: var(--font-size-lg);
-  justify-content: center;
-}
-
-.logo-wrapper {
-  text-align: center;
-  padding-top: 30px;
 }
 
 @media screen and (max-width: 767px) {
