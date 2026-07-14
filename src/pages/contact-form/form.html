@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>d-base</title>
+    <link rel="stylesheet" href="form.css" />
+    <link rel="stylesheet" href="../../shared/css/reset.css" />
+    <link rel="stylesheet" href="../../shared/css/variables.css" />
+    <link rel="stylesheet" href="../../shared/css/components.css" />
+    <link rel="stylesheet" href="../../shared/css/components/nav-menu.css" />
+    <link rel="stylesheet" href="../../shared/css/components/logo.css" />
+    <link rel="stylesheet" href="../../shared/css/components/footer.css" />
+    <link rel="stylesheet" href="../../shared/css/components/section.css" />
+    <link
+      rel="stylesheet"
+      href="../../shared/css/components/section-title.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Revalia&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="nav-menu">
+      <a href="#" class="logo">D-base</a>
+
+      <nav class="header-menu">
+        <button class="header-menu-sp">MENU</button>
+      </nav>
+
+      <ul class="nav-list">
+        <li>
+          <a href="#">ホーム</a>
+        </li>
+        <li>
+          <a href="#">施工実績</a>
+        </li>
+        <li>
+          <a href="#">価格表</a>
+        </li>
+        <li>
+          <a href="#">アクセス</a>
+        </li>
+        <li>
+          <a href="#">よくある質問</a>
+        </li>
+        <li>
+          <a href="#">お問い合わせ</a>
+        </li>
+      </ul>
+    </nav>
+    <nav class="mobile-menu">
+      <a href="#" class="logo">D-base</a>
+      <button class="close-button"><span class="close-icon">×</span></button>
+      <ul class="nav-menu-sp">
+        <li>
+          <a href="#">ホーム</a>
+        </li>
+        <li>
+          <a href="#">施工実績</a>
+        </li>
+        <li>
+          <a href="#">価格表</a>
+        </li>
+        <li>
+          <a href="#">アクセス</a>
+        </li>
+        <li>
+          <a href="#">よくある質問</a>
+        </li>
+        <li>
+          <a href="#">お問い合わせ</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- -------------------------------------------------------------- -->
+
+    <form class="form-bg-image section black">
+      <div>
+        <h1 class="section-title white">
+          <span class="ja">お問い合わせ</span>
+          <span class="en">Contact</span>
+        </h1>
+      </div>
+      <section class="form-field-wrapper">
+        <div class="form-field">
+          <label for="name">名前<span class="required-label">必須</span></label>
+          <input id="name" class="form" type="text" placeholder="鈴木一郎" />
+        </div>
+        <div class="form-field">
+          <label for="furigana"
+            >フリガナ<span class="required-label">必須</span></label
+          >
+          <input
+            id="furigana"
+            class="form"
+            type="text"
+            placeholder="スズキイチロウ"
+          />
+        </div>
+        <div class="form-field">
+          <label for="email"
+            >メールアドレス<span class="required-label">必須</span></label
+          >
+          <input
+            id="email"
+            class="form"
+            type="text"
+            placeholder="mail@example.com"
+          />
+        </div>
+        <div class="form-field">
+          <label for="tel"
+            >電話番号<span class="required-label">必須</span></label
+          >
+          <input id="tel" class="form" type="text" placeholder="09090909090" />
+        </div>
+        <!-- 住所たち　-->
+        <div class="form-field">
+          <p>住所<span class="required-label">必須</span></p>
+          <!----------->
+          <div class="address-group">
+            <div class="address-field">
+              <label for="postal-code">郵便番号</label>
+              <input
+                id="postal-code"
+                class="form"
+                type="text"
+                placeholder="000-0000"
+              />
+            </div>
+            <!----------->
+
+            <!----------->
+            <div class="address-field">
+              <label for="prefecture">都道府県</label>
+              <select
+                name="prefecture"
+                id="prefecture"
+                class="form select-height"
+              >
+                <option value="">選択してください</option>
+                <option value="北海道">北海道</option>
+                <option value="青森県">青森県</option>
+                <option value="岩手県">岩手県</option>
+                <option value="宮城県">宮城県</option>
+                <option value="秋田県">秋田県</option>
+                <option value="山形県">山形県</option>
+                <option value="福島県">福島県</option>
+                <option value="茨城県">茨城県</option>
+                <option value="栃木県">栃木県</option>
+                <option value="群馬県">群馬県</option>
+                <option value="埼玉県">埼玉県</option>
+                <option value="千葉県">千葉県</option>
+                <option value="東京都">東京都</option>
+                <option value="神奈川県">神奈川県</option>
+                <option value="新潟県">新潟県</option>
+                <option value="富山県">富山県</option>
+                <option value="石川県">石川県</option>
+                <option value="福井県">福井県</option>
+                <option value="山梨県">山梨県</option>
+                <option value="長野県">長野県</option>
+                <option value="岐阜県">岐阜県</option>
+                <option value="静岡県">静岡県</option>
+                <option value="愛知県">愛知県</option>
+                <option value="三重県">三重県</option>
+                <option value="滋賀県">滋賀県</option>
+                <option value="京都府">京都府</option>
+                <option value="大阪府">大阪府</option>
+                <option value="兵庫県">兵庫県</option>
+                <option value="奈良県">奈良県</option>
+                <option value="和歌山県">和歌山県</option>
+                <option value="鳥取県">鳥取県</option>
+                <option value="島根県">島根県</option>
+                <option value="岡山県">岡山県</option>
+                <option value="広島県">広島県</option>
+                <option value="山口県">山口県</option>
+                <option value="徳島県">徳島県</option>
+                <option value="香川県">香川県</option>
+                <option value="愛媛県">愛媛県</option>
+                <option value="高知県">高知県</option>
+                <option value="福岡県">福岡県</option>
+                <option value="佐賀県">佐賀県</option>
+                <option value="長崎県">長崎県</option>
+                <option value="熊本県">熊本県</option>
+                <option value="大分県">大分県</option>
+                <option value="宮崎県">宮崎県</option>
+                <option value="鹿児島県">鹿児島県</option>
+                <option value="沖縄県">沖縄県</option>
+              </select>
+            </div>
+          </div>
+          <!----------->
+        </div>
+        <div class="form-field">
+          <label for="city">市区町村</label>
+          <input id="city" class="form" type="text" />
+        </div>
+        <div class="form-field">
+          <label for="street-address">番地</label>
+          <input id="street-address" class="form" type="text" />
+        </div>
+        <div class="form-field">
+          <label for="building">建物名・部屋番号</label>
+          <input id="building" class="form" type="text" />
+        </div>
+        <!-- 住所たち　-->
+        <fieldset class="form-field">
+          <legend>
+            お客様のお車のサイズを選択してください<span class="optional-label"
+              >任意</span
+            >
+          </legend>
+          <div class="size-charts">
+            <div class="form">
+              <input type="checkbox" id="SS" name="scales" />
+              <label for="SS" class="size">SSサイズ</label>
+            </div>
+            <div class="form">
+              <input type="checkbox" id="S" name="scales" />
+              <label for="S" class="size">Sサイズ</label>
+            </div>
+            <div class="form">
+              <input type="checkbox" id="M" name="scales" />
+              <label for="M" class="size">Mサイズ</label>
+            </div>
+            <div class="form">
+              <input type="checkbox" id="L" name="scales" />
+              <label for="L" class="size">Lサイズ</label>
+            </div>
+
+            <div class="form">
+              <input type="checkbox" id="LL" name="scales" />
+              <label for="LL" class="size">LLサイズ</label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="form-field">
+          <legend>
+            車の経過年数を選択してください
+            <span class="optional-label">任意</span>
+          </legend>
+
+          <div class="size-charts">
+            <div class="form">
+              <input type="checkbox" id="within-3-months" name="car-age" />
+              <label for="within-3-months" class="size"
+                >購入から３ヶ月以内</label
+              >
+            </div>
+
+            <div class="form">
+              <input type="checkbox" id="3-months-to-1-year" name="car-age" />
+              <label for="3-months-to-1-year" class="size"
+                >３ヶ月から１年未満</label
+              >
+            </div>
+
+            <div class="form">
+              <input type="checkbox" id="1-to-3-years" name="car-age" />
+              <label for="1-to-3-years" class="size">１年から３年</label>
+            </div>
+
+            <div class="form">
+              <input type="checkbox" id="3-to-5-years" name="car-age" />
+              <label for="3-to-5-years" class="size">３年から５年</label>
+            </div>
+
+            <div class="form">
+              <input type="checkbox" id="over-5-years" name="car-age" />
+              <label for="over-5-years" class="size">５年以上</label>
+            </div>
+          </div>
+        </fieldset>
+        <div class="address-field">
+          <label for="prefecture"
+            >液剤を選択<span class="required-label">必須</span></label
+          >
+          <select name="prefecture" id="liquid" class="form select-height">
+            <option value="">選択してください</option>
+            <option value="NS10-H">NS10-H</option>
+            <option value="NASIOL ZR53">NASIOL ZR53</option>
+            <option value="KUBEBOND">KUBEBOND</option>
+            <option value="ポリマーコート">ポリマーコート</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for=""
+            >お問い合わせ内容<span class="required-label">必須</span></label
+          >
+          <textarea
+            rows="5"
+            cols="33"
+            class="form"
+            id="message"
+            placeholder="あの時は申し訳なかったばい..."
+          ></textarea>
+        </div>
+        <button class="submit-button">送信する</button>
+      </section>
+    </form>
+    <!-- -------------------------------------------------------------- -->
+  </body>
+</html>
