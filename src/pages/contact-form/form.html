@@ -78,16 +78,19 @@
     <!-- -------------------------------------------------------------- -->
 
     <form class="form-bg-image section black">
-      <div>
-        <h1 class="section-title white">
-          <span class="ja">お問い合わせ</span>
-          <span class="en">Contact</span>
-        </h1>
-      </div>
-      <section class="form-field-wrapper">
+      <h1 class="section-title white">
+        <span class="ja">お問い合わせ</span>
+        <span class="en">Contact</span>
+      </h1>
+      <div class="form-field-wrapper">
         <div class="form-field">
           <label for="name">名前<span class="required-label">必須</span></label>
-          <input id="name" class="form" type="text" placeholder="鈴木一郎" />
+          <input
+            id="name"
+            class="form-control"
+            type="text"
+            placeholder="鈴木一郎"
+          />
         </div>
         <div class="form-field">
           <label for="furigana"
@@ -95,7 +98,7 @@
           >
           <input
             id="furigana"
-            class="form"
+            class="form-control"
             type="text"
             placeholder="スズキイチロウ"
           />
@@ -105,9 +108,9 @@
             >メールアドレス<span class="required-label">必須</span></label
           >
           <input
+            class="form-control"
             id="email"
-            class="form"
-            type="text"
+            type="email"
             placeholder="mail@example.com"
           />
         </div>
@@ -115,31 +118,34 @@
           <label for="tel"
             >電話番号<span class="required-label">必須</span></label
           >
-          <input id="tel" class="form" type="text" placeholder="09090909090" />
+          <input
+            class="form-control"
+            id="tel"
+            type="tel"
+            placeholder="09000000000"
+          />
         </div>
         <!-- 住所たち　-->
-        <div class="form-field">
-          <p>住所<span class="required-label">必須</span></p>
-          <!----------->
-          <div class="address-group">
+        <fieldset class="form-field">
+          <legend class="form-legend">
+            住所<span class="required-label">必須</span>
+          </legend>
+          <div class="address-row">
             <div class="address-field">
               <label for="postal-code">郵便番号</label>
               <input
+                class="form-control"
                 id="postal-code"
-                class="form"
                 type="text"
                 placeholder="000-0000"
               />
             </div>
-            <!----------->
-
-            <!----------->
             <div class="address-field">
               <label for="prefecture">都道府県</label>
               <select
                 name="prefecture"
                 id="prefecture"
-                class="form select-height"
+                class="form-control form-padding"
               >
                 <option value="">選択してください</option>
                 <option value="北海道">北海道</option>
@@ -192,93 +198,102 @@
               </select>
             </div>
           </div>
-          <!----------->
-        </div>
-        <div class="form-field">
-          <label for="city">市区町村</label>
-          <input id="city" class="form" type="text" />
-        </div>
-        <div class="form-field">
-          <label for="street-address">番地</label>
-          <input id="street-address" class="form" type="text" />
-        </div>
-        <div class="form-field">
-          <label for="building">建物名・部屋番号</label>
-          <input id="building" class="form" type="text" />
-        </div>
+          <div class="form-field">
+            <label for="city">市区町村</label>
+            <input
+              id="city"
+              class="form-control"
+              type="text"
+              placeholder="コーティング市コーティング町"
+            />
+          </div>
+          <div class="form-field">
+            <label for="street-address">番地</label>
+            <input
+              id="street-address"
+              class="form-control"
+              type="text"
+              placeholder="00-00"
+            />
+          </div>
+          <div class="form-field">
+            <label for="building">建物名・部屋番号</label>
+            <input
+              id="building"
+              class="form-control"
+              type="text"
+              placeholder="コーティングコーポ0号室"
+            />
+          </div>
+        </fieldset>
         <!-- 住所たち　-->
         <fieldset class="form-field">
-          <legend>
+          <legend class="form-legend">
             お客様のお車のサイズを選択してください<span class="optional-label"
               >任意</span
             >
           </legend>
-          <div class="size-charts">
-            <div class="form">
-              <input type="checkbox" id="SS" name="scales" />
-              <label for="SS" class="size">SSサイズ</label>
+          <div class="choice-wrapper">
+            <div class="form-control">
+              <input type="radio" id="SS" name="scales" />
+              <label for="SS">SSサイズ</label>
             </div>
-            <div class="form">
-              <input type="checkbox" id="S" name="scales" />
-              <label for="S" class="size">Sサイズ</label>
+            <div class="form-control">
+              <input type="radio" id="S" name="scales" />
+              <label for="S">Sサイズ</label>
             </div>
-            <div class="form">
-              <input type="checkbox" id="M" name="scales" />
-              <label for="M" class="size">Mサイズ</label>
+            <div class="form-control">
+              <input type="radio" id="M" name="scales" />
+              <label for="M">Mサイズ</label>
             </div>
-            <div class="form">
-              <input type="checkbox" id="L" name="scales" />
-              <label for="L" class="size">Lサイズ</label>
+            <div class="form-control">
+              <input type="radio" id="L" name="scales" />
+              <label for="L">Lサイズ</label>
             </div>
-
-            <div class="form">
-              <input type="checkbox" id="LL" name="scales" />
-              <label for="LL" class="size">LLサイズ</label>
+            <div class="form-control">
+              <input type="radio" id="LL" name="scales" />
+              <label for="LL">LLサイズ</label>
             </div>
           </div>
         </fieldset>
         <fieldset class="form-field">
-          <legend>
+          <legend class="form-legend">
             車の経過年数を選択してください
             <span class="optional-label">任意</span>
           </legend>
 
-          <div class="size-charts">
-            <div class="form">
-              <input type="checkbox" id="within-3-months" name="car-age" />
-              <label for="within-3-months" class="size"
-                >購入から３ヶ月以内</label
-              >
+          <div class="choice-wrapper">
+            <div class="form-control">
+              <input type="radio" id="within-3-months" name="car-age" />
+              <label for="within-3-months">購入から３ヶ月以内</label>
             </div>
 
-            <div class="form">
-              <input type="checkbox" id="3-months-to-1-year" name="car-age" />
-              <label for="3-months-to-1-year" class="size"
-                >３ヶ月から１年未満</label
-              >
+            <div class="form-control">
+              <input type="radio" id="3-months-to-1-year" name="car-age" />
+              <label for="3-months-to-1-year">３ヶ月から１年未満</label>
             </div>
 
-            <div class="form">
-              <input type="checkbox" id="1-to-3-years" name="car-age" />
-              <label for="1-to-3-years" class="size">１年から３年</label>
+            <div class="form-control">
+              <input type="radio" id="1-to-3-years" name="car-age" />
+              <label for="1-to-3-years">１年から３年</label>
             </div>
 
-            <div class="form">
-              <input type="checkbox" id="3-to-5-years" name="car-age" />
-              <label for="3-to-5-years" class="size">３年から５年</label>
+            <div class="form-control">
+              <input type="radio" id="3-to-5-years" name="car-age" />
+              <label for="3-to-5-years">３年から５年</label>
             </div>
 
-            <div class="form">
-              <input type="checkbox" id="over-5-years" name="car-age" />
-              <label for="over-5-years" class="size">５年以上</label>
+            <div class="form-control">
+              <input type="radio" id="over-5-years" name="car-age" />
+              <label for="over-5-years">５年以上</label>
             </div>
           </div>
         </fieldset>
-        <div class="address-field">
-          <label for="prefecture"
-            >液剤を選択<span class="required-label">必須</span></label
+        <div class="form-field">
+          <label for="liquid"
+            >使用する液剤を選択<span class="required-label">必須</span></label
           >
-          <select name="prefecture" id="liquid" class="form select-height">
+          <select name="liquid" id="liquid" class="form-control form-padding">
             <option value="">選択してください</option>
             <option value="NS10-H">NS10-H</option>
             <option value="NASIOL ZR53">NASIOL ZR53</option>
@@ -287,19 +302,17 @@
           </select>
         </div>
         <div class="form-field">
-          <label for=""
+          <label for="message"
             >お問い合わせ内容<span class="required-label">必須</span></label
           >
           <textarea
-            rows="5"
-            cols="33"
-            class="form"
+            class="form-control text-area"
             id="message"
             placeholder="あの時は申し訳なかったばい..."
           ></textarea>
         </div>
         <button class="submit-button">送信する</button>
-      </section>
+      </div>
     </form>
     <!-- -------------------------------------------------------------- -->
   </body>

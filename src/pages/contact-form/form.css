@@ -26,18 +26,17 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-
   border: none;
 }
 
-.form {
+.form-control {
   width: 100%;
-
   padding: 10px;
   border: 2px solid white;
   box-sizing: border-box;
   background-color: var(--colorWhite);
   border-radius: 3px;
+  color: var(--colorBlack);
 }
 
 .required-label {
@@ -54,7 +53,7 @@
   padding-inline: 5px;
 }
 
-.address-group {
+.address-row {
   display: flex;
   gap: 10px;
 }
@@ -67,33 +66,23 @@
   gap: 20px;
 }
 
-.select-height {
+.form-padding {
   padding: 14px;
+  background-image: url("../../../images/contact-form/下向き矢印のアイコン.svg");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 20px;
+  stroke-width: 10;
 }
 
-.size {
-  color: var(--colorBlack);
-}
-
-.size-charts {
+.choice-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
 }
 
-/*todo:タグにつけんな*/
-legend {
+.form-legend {
   margin-bottom: 20px;
-}
-
-.form {
-  width: 100%;
-
-  padding: 10px;
-  border: 2px solid white;
-  box-sizing: border-box;
-  background-color: var(--colorWhite);
-  border-radius: 3px;
 }
 
 .submit-button {
@@ -104,4 +93,8 @@ legend {
   padding: 10px;
   box-sizing: border-box;
   border-radius: 3px;
+}
+
+.text-area {
+  min-height: 160px;
 }
