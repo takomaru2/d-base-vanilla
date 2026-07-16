@@ -66,8 +66,9 @@
   gap: 20px;
 }
 
-.form-padding {
-  padding: 14px;
+.form-select {
+  padding-block: 14px;
+  padding-inline: 10px;
   background-image: url("../../../images/contact-form/下向き矢印のアイコン.svg");
   background-repeat: no-repeat;
   background-position: right 14px center;
@@ -79,6 +80,10 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .form-legend {
