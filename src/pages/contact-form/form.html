@@ -86,6 +86,7 @@
         <div class="form-field">
           <label for="name">名前<span class="required-label">必須</span></label>
           <input
+            name="name"
             id="name"
             class="form-control"
             type="text"
@@ -97,6 +98,7 @@
             >フリガナ<span class="required-label">必須</span></label
           >
           <input
+            name="furigana"
             id="furigana"
             class="form-control"
             type="text"
@@ -108,6 +110,7 @@
             >メールアドレス<span class="required-label">必須</span></label
           >
           <input
+            name="email"
             class="form-control"
             id="email"
             type="email"
@@ -119,6 +122,7 @@
             >電話番号<span class="required-label">必須</span></label
           >
           <input
+            name="tel"
             class="form-control"
             id="tel"
             type="tel"
@@ -134,6 +138,7 @@
             <div class="address-field">
               <label for="postal-code">郵便番号</label>
               <input
+                name="postal-code"
                 class="form-control"
                 id="postal-code"
                 type="text"
@@ -201,6 +206,7 @@
           <div class="form-field">
             <label for="city">市区町村</label>
             <input
+              name="city"
               id="city"
               class="form-control"
               type="text"
@@ -210,6 +216,7 @@
           <div class="form-field">
             <label for="street-address">番地</label>
             <input
+              name="street-address"
               id="street-address"
               class="form-control"
               type="text"
@@ -219,6 +226,7 @@
           <div class="form-field">
             <label for="building">建物名・部屋番号</label>
             <input
+              name="building"
               id="building"
               class="form-control"
               type="text"
@@ -226,7 +234,7 @@
             />
           </div>
         </fieldset>
-        <!-- 住所たち　-->
+        <!-- 住所たち終わり　-->
         <fieldset class="form-field">
           <legend class="form-legend">
             お客様のお車のサイズを選択してください<span class="optional-label"
@@ -235,24 +243,24 @@
           </legend>
           <div class="choice-wrapper">
             <div class="form-control">
-              <input type="radio" id="SS" name="scales" />
-              <label for="SS">SSサイズ</label>
+              <input type="radio" id="car-size-ss" name="car-size" value="SS" />
+              <label for="car-size-ss">SSサイズ</label>
             </div>
             <div class="form-control">
-              <input type="radio" id="S" name="scales" />
-              <label for="S">Sサイズ</label>
+              <input type="radio" id="car-size-s" name="car-size" value="S" />
+              <label for="car-size-s">Sサイズ</label>
             </div>
             <div class="form-control">
-              <input type="radio" id="M" name="scales" />
-              <label for="M">Mサイズ</label>
+              <input type="radio" id="car-size-m" name="car-size" value="M" />
+              <label for="car-size-m">Mサイズ</label>
             </div>
             <div class="form-control">
-              <input type="radio" id="L" name="scales" />
-              <label for="L">Lサイズ</label>
+              <input type="radio" id="car-size-l" name="car-size" value="L" />
+              <label for="car-size-l">Lサイズ</label>
             </div>
             <div class="form-control">
-              <input type="radio" id="LL" name="scales" />
-              <label for="LL">LLサイズ</label>
+              <input type="radio" id="car-size-ll" name="car-size" value="LL" />
+              <label for="car-size-ll">LLサイズ</label>
             </div>
           </div>
         </fieldset>
@@ -264,36 +272,65 @@
 
           <div class="choice-wrapper">
             <div class="form-control">
-              <input type="radio" id="within-3-months" name="car-age" />
-              <label for="within-3-months">購入から３ヶ月以内</label>
+              <input
+                type="radio"
+                id="car-age-within-3-months"
+                name="car-age"
+                value="within-3-months"
+              />
+              <label for="car-age-within-3-months">購入から３ヶ月以内</label>
             </div>
 
             <div class="form-control">
-              <input type="radio" id="3-months-to-1-year" name="car-age" />
-              <label for="3-months-to-1-year">３ヶ月から１年未満</label>
+              <input
+                type="radio"
+                id="car-age-3-months-to-1-year"
+                name="car-age"
+                value="3-months-to-1-year"
+              />
+              <label for="car-age-3-months-to-1-year">３ヶ月から１年未満</label>
             </div>
 
             <div class="form-control">
-              <input type="radio" id="1-to-3-years" name="car-age" />
-              <label for="1-to-3-years">１年から３年</label>
+              <input
+                type="radio"
+                id="car-age-1-to-3-years"
+                name="car-age"
+                value="1-to-3-years"
+              />
+              <label for="car-age-1-to-3-years">１年から３年</label>
             </div>
 
             <div class="form-control">
-              <input type="radio" id="3-to-5-years" name="car-age" />
-              <label for="3-to-5-years">３年から５年</label>
+              <input
+                type="radio"
+                id="car-age-3-to-5-years"
+                name="car-age"
+                value="3-to-5-years"
+              />
+              <label for="car-age-3-to-5-years">３年から５年</label>
             </div>
 
             <div class="form-control">
-              <input type="radio" id="over-5-years" name="car-age" />
-              <label for="over-5-years">５年以上</label>
+              <input
+                type="radio"
+                id="car-age-over-5-years"
+                name="car-age"
+                value="over-5-years"
+              />
+              <label for="car-age-over-5-years">５年以上</label>
             </div>
           </div>
         </fieldset>
         <div class="form-field">
-          <label for="liquid"
+          <label for="coating-product"
             >使用する液剤を選択<span class="required-label">必須</span></label
           >
-          <select name="liquid" id="liquid" class="form-control form-padding">
+          <select
+            name="coating-product"
+            id="coating-product"
+            class="form-control form-padding"
+          >
             <option value="">選択してください</option>
             <option value="NS10-H">NS10-H</option>
             <option value="NASIOL ZR53">NASIOL ZR53</option>
@@ -306,9 +343,10 @@
             >お問い合わせ内容<span class="required-label">必須</span></label
           >
           <textarea
+            name="message"
             class="form-control text-area"
             id="message"
-            placeholder="あの時は申し訳なかったばい..."
+            placeholder="お車の状態や施工について気になることをご入力ください"
           ></textarea>
         </div>
         <button class="submit-button">送信する</button>
