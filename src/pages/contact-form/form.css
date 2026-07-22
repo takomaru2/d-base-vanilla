@@ -103,3 +103,22 @@
 .text-area {
   min-height: 160px;
 }
+
+/*===================================*/
+.error-message {
+  display: none;
+}
+
+.error-message.is-visible {
+  display: block;
+  color: var(--colorAccent);
+}
+
+.form-control.is-visible {
+  border-color: var(--colorAccent);
+}
+
+.form-control.input-successful {
+  border-color: #5cb85c;
+}
+/*===================================*/
