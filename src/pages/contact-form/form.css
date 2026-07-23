@@ -1,0 +1,105 @@
+.form-bg-image {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../../images/contact-form/_DSF1065.jpg");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-field-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: none;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid white;
+  box-sizing: border-box;
+  background-color: var(--colorWhite);
+  border-radius: 3px;
+  color: var(--colorBlack);
+}
+
+.required-label {
+  background-color: var(--colorAccent);
+  border-radius: 10%;
+  margin-left: 10px;
+  padding-inline: 5px;
+}
+
+.optional-label {
+  background-color: var(--flexBottomContactBgColor);
+  border-radius: 10%;
+  margin-left: 10px;
+  padding-inline: 5px;
+}
+
+.address-row {
+  display: flex;
+  gap: 10px;
+}
+
+.address-field {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-select {
+  padding-block: 14px;
+  padding-inline: 10px;
+  background-image: url("../../../images/contact-form/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 20px;
+  stroke-width: 10;
+}
+
+.choice-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.form-legend {
+  margin-bottom: 20px;
+}
+
+.submit-button {
+  color: var(--colorWhite);
+  background-color: var(--colorAccent);
+  width: 100%;
+
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.text-area {
+  min-height: 160px;
+}
