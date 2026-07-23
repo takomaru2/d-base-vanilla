@@ -91,6 +91,7 @@
             class="form-control"
             type="text"
             placeholder="鈴木一郎"
+            required
           />
         </div>
         <div class="form-field">
@@ -103,6 +104,7 @@
             class="form-control"
             type="text"
             placeholder="スズキイチロウ"
+            required
           />
         </div>
         <div class="form-field">
@@ -115,6 +117,7 @@
             id="email"
             type="email"
             placeholder="mail@example.com"
+            required
           />
         </div>
         <div class="form-field">
@@ -127,6 +130,7 @@
             id="tel"
             type="tel"
             placeholder="09000000000"
+            required
           />
         </div>
         <!-- 住所たち　-->
@@ -143,6 +147,7 @@
                 id="postal-code"
                 type="text"
                 placeholder="000-0000"
+                required
               />
             </div>
             <div class="address-field">
@@ -151,6 +156,7 @@
                 name="prefecture"
                 id="prefecture"
                 class="form-control form-select"
+                required
               >
                 <option value="">選択してください</option>
                 <option value="北海道">北海道</option>
@@ -211,6 +217,7 @@
               class="form-control"
               type="text"
               placeholder="コーティング市コーティング町"
+              required
             />
           </div>
           <div class="form-field">
@@ -221,6 +228,7 @@
               class="form-control"
               type="text"
               placeholder="00-00"
+              required
             />
           </div>
           <div class="form-field">
@@ -232,6 +240,7 @@
               type="text"
               placeholder="コーティングコーポ0号室"
             />
+            <!--ここは任意なのでrequired無し-->
           </div>
         </fieldset>
         <!-- 住所たち終わり　-->
@@ -330,6 +339,7 @@
             name="coating-product"
             id="coating-product"
             class="form-control form-select"
+            required
           >
             <option value="">選択してください</option>
             <option value="NS10-H">NS10-H</option>
@@ -347,6 +357,7 @@
             class="form-control text-area"
             id="message"
             placeholder="お車の状態や施工について気になることをご入力ください"
+            required
           ></textarea>
         </div>
         <button class="submit-button">送信する</button>
