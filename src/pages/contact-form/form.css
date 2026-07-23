@@ -105,6 +105,10 @@
 }
 
 /*===================================*/
+.form-control:focus {
+  outline: none;
+}
+
 .error-message {
   display: none;
 }
@@ -119,6 +123,7 @@
 }
 
 .form-control.input-successful {
-  border-color: #5cb85c;
+  border-color: var(--colorSuccess);
 }
+
 /*===================================*/

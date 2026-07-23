@@ -1,45 +1,32 @@
-const telElement = document.getElementById("tel");
+const formControl = document.getElementById("tel"); // input要素取得
 const requiredError = document.getElementById("required-error");
+const phoneNumberError = document.getElementById("phone-number-error");
+const phoneLengthError = document.getElementById("phone-length-error");
 
-// inputが間違っている時のCSS用の要素取得
-const inputErrorBorder = document.getElementById("tel");
+formControl.addEventListener("blur", () => {
+  // エラー表示をリセット
+  formControl.classList.remove("is-visible");
+  requiredError.classList.remove("is-visible");
+  phoneNumberError.classList.remove("is-visible");
+  phoneLengthError.classList.remove("is-visible");
+  formControl.classList.remove("input-successful");
 
-telElement.addEventListener("blur", () => {
-  // 空欄のとき
-  if (telElement.value === "") {
+  // 空欄の場合
+  if (formControl.value === "") {
     requiredError.classList.add("is-visible");
-    inputErrorBorder.classList.add("is-visible");
-  } else {
-    requiredError.classList.remove("is-visible");
-    inputErrorBorder.classList.remove("is-visible");
-  }
+    formControl.classList.add("is-visible");
 
-  // 入力が半角数字じゃなかったら
-  const phoneNumberError = document.getElementById("phone-number-error");
-
-  if (!/^[0-9]+$/.test(telElement.value)) {
+    // 半角数字以外の場合
+  } else if (!/^[0-9-]+$/.test(formControl.value)) {
     phoneNumberError.classList.add("is-visible");
-    inputErrorBorder.classList.add("is-visible");
-  } else {
-    phoneNumberError.classList.remove("is-visible");
-    inputErrorBorder.classList.add("is-visible");
-  }
+    formControl.classList.add("is-visible");
 
-  // 全ての条件をクリアした時のみ成功クラスを付与したい
-  // elementのvalueのlengthが6文字以上２０文字以内の場合
-  const isValidLength =
-    inputErrorBorder.value.length >= 6 && inputErrorBorder.value.length < 20;
-
-  if (
-    telElement.value !== "" &&
-    /^[0-9]+$/.test(telElement.value) &&
-    isValidLength
-  ) {
-    inputErrorBorder.classList.add("input-successful");
+    // 文字数が正しくない場合(文字数が6文字未満、または20文字より多い場合)
+  } else if (formControl.value.length < 6 || formControl.value.length > 20) {
+    phoneLengthError.classList.add("is-visible");
+    formControl.classList.add("is-visible");
   } else {
-    inputErrorBorder.classList.remove("input-successful");
+    // ここまでの条件に引っかからなかった = 全てOKの場合
+    formControl.classList.add("input-successful");
   }
 });
-
-/*=============================================================================*/
-/*=============================================================================*/

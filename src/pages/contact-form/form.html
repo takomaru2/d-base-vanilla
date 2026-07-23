@@ -183,14 +183,18 @@
               class="form-control"
               id="tel"
               type="tel"
-              placeholder="09000000000"
+              placeholder="09000000000（ハイフンありなしどちらでも可）"
             />
           </div>
 
           <p class="error-message" id="required-error">※入力してください</p>
 
+          <p class="error-message" id="phone-length-error">
+            ※電話番号は6文字以上20文字以内で入力してください
+          </p>
+
           <p class="error-message" id="phone-number-error">
-            ※ 半角数字と + - ( ) のみ利用できます
+            ※ 半角数字とハイフン（-）のみ利用できます
           </p>
         </div>
         <!-- 住所たち　-->
