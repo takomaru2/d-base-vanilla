@@ -1,0 +1,90 @@
+.fixed-bottom-contact-container {
+  width: 100vw;
+  height: 90px;
+  background-color: var(--flexBottomContactBgColor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding-inline: clamp(70px, 9vw, 140px);
+  .tel-number {
+    font-size: clamp(var(--font-size-xl), 3vw, var(--font-size-xxl));
+    letter-spacing: 2px;
+  }
+  .shop-info-list {
+    font-size: clamp(var(--font-size-md), 2vw, var(--font-size-lg));
+    display: flex;
+    gap: clamp(10px, 1.8vw, 30px);
+  }
+  .line-link-button-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .line-form-container {
+    font-size: var(--font-size-md);
+  }
+  .line-green {
+    color: var(--lineColor);
+  }
+}
+
+.fixed-bottom-contact-container-sp {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .fixed-bottom-contact-container {
+    display: none;
+  }
+
+  .fixed-bottom-contact-container-sp {
+    display: block;
+    background-color: var(--flexBottomContactBgColor);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 90px;
+    z-index: 100;
+  }
+
+  .fixed-bottom-contact-sp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .line-link-button-container-sp {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  .tel-number-sp {
+    font-size: var(--font-size-lg);
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+  .line-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .shop-info-list-sp {
+    font-size: var(--font-size-sm);
+    display: flex;
+    column-gap: 15px;
+  }
+
+  .line-form-container {
+    font-size: var(--font-size-sm);
+  }
+}
