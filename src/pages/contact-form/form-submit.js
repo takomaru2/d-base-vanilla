@@ -18,16 +18,14 @@ form.addEventListener("submit", async (e) => {
       body: formData,
     });
 
-    const data = await response.json();
-
     if (response.ok) {
-      alert("Success! Your message has been sent.");
+      alert("お問い合わせを送信しました。");
       form.reset();
     } else {
-      alert("Error: " + data.message);
+      alert("お問い合わせの送信に失敗しました。");
     }
   } catch (error) {
-    alert("Something went wrong. Please try again.");
+    alert("エラーが発生しました。時間をおいてもう一度お試しください。");
   } finally {
     submitBtn.textContent = originalText;
     submitBtn.disabled = false;
