@@ -1,4 +1,5 @@
 /*このセクション固有の赤いやつはsectionには入れない！*/
+
 .decoration-line {
   position: relative;
   z-index: 1;
@@ -291,5 +292,221 @@ details[open] summary {
   }
 }
 
-/*detail,summaryタグでデフォルトのマーカーがflexすると消えたの何で？*/
 /*ここまでサイズ表セクション*/
+
+/*ここからdetail-section*/
+
+.details-header {
+  .title {
+    font-weight: bold;
+    position: relative;
+    font-size: var(--font-size-xxl);
+    border-bottom: 2px solid var(--colorOrange);
+    padding-bottom: 4px;
+    display: inline-block;
+
+    &::before {
+      background-color: var(--colorOrange);
+      position: absolute;
+      top: 57px;
+      left: -4px;
+      width: 12px;
+      height: 12px;
+      content: "";
+      border-radius: 50%;
+      z-index: 100;
+    }
+  }
+
+  .comment {
+    padding-top: 15px;
+    font-size: var(--font-size-lg);
+    letter-spacing: 2px;
+  }
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+
+    .title {
+      font-size: var(--font-size-xl);
+
+      &::before {
+        top: 43px;
+      }
+    }
+
+    .comment {
+      font-size: var(--font-size-sm);
+    }
+  }
+}
+
+.detail-card-wrapper {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  margin-inline: auto;
+
+  @media screen and (max-width: 767px) {
+    justify-content: start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    scroll-snap-type: x mandatory;
+
+    max-width: 300px;
+    margin-inline: auto;
+  }
+}
+
+@keyframes textColor {
+  from {
+    color: var(--colorBlack);
+  }
+
+  to {
+    color: var(--colorOrange);
+  }
+}
+
+.detail-card {
+  flex: 1;
+  min-width: 200px;
+  max-width: calc(1200px / 3);
+
+  background-color: var(--colorWhite);
+  color: var(--colorBlack);
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-bottom: 60px;
+
+  padding-inline: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media screen and (max-width: 767px) {
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      right: 10px;
+      bottom: 0;
+      font-size: 40px;
+      font-weight: 700;
+      color: var(--colorBlack);
+      content: "…";
+      animation: textColor 1.5s infinite alternate;
+    }
+  }
+
+  .detail-card-title {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .detail-card-text {
+    text-align: center;
+    font-size: clamp(12px, 2vw, 14px);
+  }
+
+  .detail-card-size-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-inline: auto;
+  }
+
+  .detail-card-size {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    gap: clamp(50px, 1vw, 100px);
+    font-size: clamp(20px, 2.5vw, 30px);
+  }
+}
+
+.feature {
+  max-width: min(100%, 1200px);
+  margin-inline: auto;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.feature-title {
+  font-weight: bold;
+  margin-top: 15px;
+  font-size: var(--font-size-lg);
+  white-space: pre-wrap;
+  letter-spacing: 2px;
+}
+
+.feature-text {
+  letter-spacing: 1.6px;
+  margin-top: 5px;
+  font-size: clamp(var(--font-size-md), 2.8vw, var(--font-size-lg));
+  white-space: pre-line;
+  text-align: left;
+  line-height: 30px;
+}
+
+.spec-container {
+  display: flex;
+  align-items: center;
+  gap: clamp(20px, 8vw, 200px);
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+
+  .spec-image {
+    width: 100%;
+    min-width: 375px;
+    height: auto;
+  }
+}
+
+.spec-item {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  letter-spacing: 1px;
+}
+
+.spec-label {
+  width: 150px;
+}
+
+.spec-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail-section {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+
+  @media screen and (max-width: 767px) {
+    gap: 60px;
+  }
+}
+
+.detail-group {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  padding-inline: 50px;
+
+  @media screen and (max-width: 767px) {
+    gap: 60px;
+    padding-inline: 20px;
+  }
+}
+
+/*ここまでdetail-section*/
