@@ -30,3 +30,21 @@ formControl.addEventListener("blur", () => {
     formControl.classList.add("input-successful");
   }
 });
+
+// 名前用
+const nameInputControl = document.getElementById("name");
+const nameRequiredError = document.getElementById("name-required-error");
+
+nameInputControl.addEventListener("blur", () => {
+  // エラー表示をリセット
+  nameRequiredError.classList.remove("is-visible");
+  nameInputControl.classList.remove("is-visible");
+  nameInputControl.classList.remove("input-successful");
+
+  if (nameInputControl.value === "") {
+    nameRequiredError.classList.add("is-visible");
+    nameInputControl.classList.add("is-visible");
+  } else {
+    nameInputControl.classList.add("input-successful");
+  }
+});
