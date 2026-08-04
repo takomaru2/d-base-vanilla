@@ -48,3 +48,28 @@ nameInputControl.addEventListener("blur", () => {
     nameInputControl.classList.add("input-successful");
   }
 });
+
+// フリガナ
+const furiganaInputControl = document.getElementById("furigana");
+const furiganaError = document.getElementById("furigana-error");
+const furiganaRequiredError = document.getElementById(
+  "furigana-required-error",
+);
+
+furiganaInputControl.addEventListener("blur", () => {
+  // エラー表示をリセット
+  furiganaRequiredError.classList.remove("is-visible");
+  furiganaInputControl.classList.remove("is-visible");
+  furiganaError.classList.remove("is-visible");
+  furiganaInputControl.classList.remove("input-successful");
+
+  if (furiganaInputControl.value === "") {
+    furiganaRequiredError.classList.add("is-visible");
+    furiganaInputControl.classList.add("is-visible");
+  } else if (!/^[ァ-ヶー]+$/.test(furiganaInputControl.value)) {
+    furiganaError.classList.add("is-visible");
+    furiganaInputControl.classList.add("is-visible");
+  } else {
+    furiganaInputControl.classList.add("input-successful");
+  }
+});
