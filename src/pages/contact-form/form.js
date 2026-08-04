@@ -73,3 +73,28 @@ furiganaInputControl.addEventListener("blur", () => {
     furiganaInputControl.classList.add("input-successful");
   }
 });
+
+// メールアドレス
+const emailInputControl = document.getElementById("email");
+const emailError = document.getElementById("email-error");
+const emailRequiredError = document.getElementById("email-required-error");
+
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+emailInputControl.addEventListener("blur", () => {
+  // エラー表示をリセット
+  emailRequiredError.classList.remove("is-visible");
+  emailInputControl.classList.remove("is-visible");
+  emailError.classList.remove("is-visible");
+  emailInputControl.classList.remove("input-successful");
+
+  if (emailInputControl.value === "") {
+    emailRequiredError.classList.add("is-visible");
+    emailInputControl.classList.add("is-visible");
+  } else if (!emailRegex.test(emailInputControl.value)) {
+    emailError.classList.add("is-visible");
+    emailInputControl.classList.add("is-visible");
+  } else {
+    emailInputControl.classList.add("input-successful");
+  }
+});
