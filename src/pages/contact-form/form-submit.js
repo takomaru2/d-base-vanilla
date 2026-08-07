@@ -2,8 +2,24 @@ const form = document.getElementById("form");
 const submitBtn = form.querySelector('button[type="submit"]');
 
 form.addEventListener("submit", async (e) => {
+  // ============================================//
   e.preventDefault();
+  let isValid = true;
 
+  for (let i = 0; i < ids.length; i++) {
+    const id = ids[i];
+
+    if (!validation(id)) {
+      isValid = false;
+    }
+  }
+
+  if (!isValid) {
+    e.preventDefault();
+    return;
+  }
+
+  // ============================================//
   const formData = new FormData(form);
   formData.append("access_key", "34854d7a-efbf-4678-bced-6abbbbe50e03");
 
