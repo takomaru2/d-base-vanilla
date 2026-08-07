@@ -78,7 +78,6 @@
     <!-- -------------------------------------------------------------- -->
 
     <main>
-      <!--見本HTML始まり-->
       <form class="form-bg-image section black" id="form">
         <h1 class="section-title white">
           <span class="ja">お問い合わせ</span>
@@ -95,8 +94,10 @@
               class="form-control"
               type="text"
               placeholder="鈴木一郎"
-              required
             />
+            <p class="error-message" id="name-required-error">
+              ※入力してください
+            </p>
           </div>
           <div class="form-field">
             <label for="furigana"
@@ -108,8 +109,14 @@
               class="form-control"
               type="text"
               placeholder="スズキイチロウ"
-              required
             />
+            <p class="error-message" id="furigana-required-error">
+              ※入力してください
+            </p>
+            <p class="error-message" id="furigana-error">
+              ※全角カタカナで入力してください
+            </p>
+            <p class="error-message"></p>
           </div>
           <div class="form-field">
             <label for="email"
@@ -121,8 +128,13 @@
               id="email"
               type="email"
               placeholder="mail@example.com"
-              required
             />
+            <p class="error-message" id="email-required-error">
+              ※入力してください
+            </p>
+            <p class="error-message" id="email-error">
+              ※有効なメールアドレスを入力してください
+            </p>
           </div>
           <div class="form-field">
             <label for="tel"
@@ -134,8 +146,15 @@
               id="tel"
               type="tel"
               placeholder="09000000000"
-              required
             />
+
+            <p class="error-message" id="tel-required-error">
+              ※入力してください
+            </p>
+
+            <p class="error-message" id="tel-error">
+              ※ 半角数字とハイフン（-）のみ利用できます
+            </p>
           </div>
           <!-- 住所たち　-->
           <fieldset class="form-field">
@@ -151,8 +170,13 @@
                   id="postal-code"
                   type="text"
                   placeholder="000-0000"
-                  required
                 />
+                <p class="error-message" id="postal-code-required-error">
+                  ※入力してください
+                </p>
+                <p class="error-message" id="postal-code-error">
+                  ※ 半角数字とハイフン（-）のみ利用できます
+                </p>
               </div>
               <div class="address-field">
                 <label for="prefecture">都道府県</label>
@@ -160,7 +184,6 @@
                   name="prefecture"
                   id="prefecture"
                   class="form-control form-select"
-                  required
                 >
                   <option value="">選択してください</option>
                   <option value="北海道">北海道</option>
@@ -211,6 +234,9 @@
                   <option value="鹿児島県">鹿児島県</option>
                   <option value="沖縄県">沖縄県</option>
                 </select>
+                <p class="error-message" id="prefecture-required-error">
+                  ※入力してください
+                </p>
               </div>
             </div>
             <div class="form-field">
@@ -221,8 +247,10 @@
                 class="form-control"
                 type="text"
                 placeholder="コーティング市コーティング町"
-                required
               />
+              <p class="error-message" id="city-required-error">
+                ※入力してください
+              </p>
             </div>
             <div class="form-field">
               <label for="street-address">番地</label>
@@ -232,8 +260,10 @@
                 class="form-control"
                 type="text"
                 placeholder="00-00"
-                required
               />
+              <p class="error-message" id="street-address-required-error">
+                ※入力してください
+              </p>
             </div>
             <div class="form-field">
               <label for="building">建物名・部屋番号</label>
@@ -244,7 +274,6 @@
                 type="text"
                 placeholder="コーティングコーポ0号室"
               />
-              <!--ここは任意なのでrequired無し-->
             </div>
           </fieldset>
           <!-- 住所たち終わり　-->
@@ -317,7 +346,6 @@
               name="coating-product"
               id="coating-product"
               class="form-control form-select"
-              required
             >
               <option value="">選択してください</option>
               <option value="NS10-H">NS10-H</option>
@@ -325,6 +353,9 @@
               <option value="KUBEBOND">KUBEBOND</option>
               <option value="ポリマーコート">ポリマーコート</option>
             </select>
+            <p class="error-message" id="coating-product-required-error">
+              ※入力してください
+            </p>
           </div>
           <div class="form-field">
             <label for="message"
@@ -335,8 +366,10 @@
               class="form-control text-area"
               id="message"
               placeholder="お車の状態や施工について気になることをご入力ください"
-              required
             ></textarea>
+            <p class="error-message" id="message-required-error">
+              ※入力してください
+            </p>
           </div>
           <button class="submit-button" type="submit">送信する</button>
         </div>
@@ -372,5 +405,6 @@
       </div>
     </footer>
     <script src="form-submit.js"></script>
+    <script src="form.js"></script>
   </body>
 </html>
